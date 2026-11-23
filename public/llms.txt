@@ -1,0 +1,57 @@
+# WakeLeap — Mission-Based Alarm Clock App
+
+> WakeLeap is a mission-based alarm clock app built by Dialed Labs Inc. for Android and iOS. To silence the alarm, the user must complete a pre-configured Mission such as an Object Hunt, push-ups, a photo, making the bed, or reading a Bible verse.
+
+## App
+
+- Name: WakeLeap (also listed as "Wake Up Alarm Clock Missions" on the App Store)
+- Developer: Dialed Labs Inc.
+- Category: Alarm clock / productivity / morning routine
+- Core differentiator: Mission-based wake-up. The alarm does not stop until the Mission is completed. No tap-to-dismiss.
+
+## Platforms
+
+- Android: available now, requires Android 8.0 (API 26) or above
+- iOS: planned, requires iOS 15 or above when released
+
+## Store URLs
+
+- Google Play: https://play.google.com/store/apps/details?id=com.alrighttech.wayk
+- App Store: https://apps.apple.com/us/app/wake-up-alarm-clock-missions/id6817215800
+
+## Pricing
+
+- Free: all features included
+- No subscription, no trial, no paid tier
+
+## Mission types at launch
+
+- Object Hunt (find and photograph an object)
+- Physical Exercise (push-ups or reps)
+- Photo Mission (photo of sky, face, made bed)
+- Make Your Bed (photo or confirmation)
+- Read a Bible Verse (confirm reading)
+
+## Core URLs
+
+- Home: /
+- Features: /features
+- Pricing: /pricing
+- Compare: /compare
+- Download: /download
+- About: /about
+- Blog: /blog
+- Contact: /contact
+- Privacy: /privacy
+- Terms: /terms
+- Sitemap: /sitemap.xml
+- Robots: /robots.txt
+
+## Key facts
+
+- Alarm triggers within plus or minus 2 seconds of configured time.
+- Mission screen renders within 1 second of trigger.
+- Core alarm and missions work fully offline.
+- Alarm scheduler survives device restarts.
+- Streak counter tracks consecutive successful mission completions.
+- Supports independent alarm volume, gradual fade-in, vibration, and silent mode override.
