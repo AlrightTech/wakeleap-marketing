@@ -19,6 +19,16 @@ import { vibratePosts } from "./blog-cluster-vibrate";
 import { mathPosts } from "./blog-cluster-math";
 import { circadianPosts } from "./blog-cluster-circadian";
 import { adhdPosts } from "./blog-cluster-adhd";
+import { smartPosts } from "./blog-cluster-smart";
+import { miraclePosts } from "./blog-cluster-miracle";
+import { teenPosts } from "./blog-cluster-teen";
+import { stretchPosts } from "./blog-cluster-stretch";
+import { prayerPosts } from "./blog-cluster-prayer";
+import { sunrisePosts } from "./blog-cluster-sunrise";
+import { loudPosts } from "./blog-cluster-loud";
+import { bestPosts } from "./blog-cluster-best";
+import { travelPosts } from "./blog-cluster-travel";
+import { studentPosts } from "./blog-cluster-student";
 
 export const posts: Post[] = [
   ...missionPosts,
@@ -31,6 +41,16 @@ export const posts: Post[] = [
   ...mathPosts,
   ...circadianPosts,
   ...adhdPosts,
+  ...smartPosts,
+  ...miraclePosts,
+  ...teenPosts,
+  ...stretchPosts,
+  ...prayerPosts,
+  ...sunrisePosts,
+  ...loudPosts,
+  ...bestPosts,
+  ...travelPosts,
+  ...studentPosts,
 ];
 
 export function getPost(slug: string) {
