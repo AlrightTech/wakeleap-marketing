@@ -25,6 +25,7 @@ export async function generateMetadata({
     title: `${p.title} — WakeLeap`,
     description: p.description,
     path: `/blog/${p.slug}`,
+    ogType: "article",
   });
 }
 

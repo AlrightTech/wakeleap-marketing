@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/privacy",
     "/terms",
     "/blog",
+    "/llms.txt",
   ];
 
   const entries: MetadataRoute.Sitemap = staticRoutes.map((path) => ({

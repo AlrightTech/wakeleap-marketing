@@ -6,7 +6,7 @@ import FAQ from "@/components/FAQ";
 export const metadata = buildMetadata({
   title: "WakeLeap Pricing — Free Alarm Clock App",
   description:
-    "WakeLeap is a free mission-based alarm clock app for Android, with an iOS version planned. All features are free, with no subscription and no paid tier.",
+    "WakeLeap is a free mission-based alarm clock app for Android and iOS. All features are free, with no subscription and no paid tier.",
   path: "/pricing",
   keywords: ["alarm clock app", "alarm app", "free alarm", "mission alarm", "alarm sound", "free alarm clock app", "alarm app free", "mission alarm app"],
 });
@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: "Which devices support WakeLeap?",
-    a: "WakeLeap supports Android 8.0 (API 26) and above. An iOS version of WakeLeap supporting iOS 15 and above is planned.",
+    a: "WakeLeap supports Android 8.0 (API 26)+ on Google Play and iOS 15+ on the App Store.",
   },
 ];
 
@@ -44,7 +44,7 @@ export default function PricingPage() {
       <Section
         eyebrow="WakeLeap alarm app pricing"
         title="WakeLeap is free — all features included"
-        subtitle="WakeLeap is a mission-based alarm clock app for Android, with an iOS version planned. Every WakeLeap feature is free, with no subscription and no paid tier."
+        subtitle="WakeLeap is a mission-based alarm clock app for Android and iOS. Every WakeLeap feature is free, with no subscription and no paid tier."
       >
         <div className="max-w-3xl space-y-4 text-muted leading-relaxed">
           <p>

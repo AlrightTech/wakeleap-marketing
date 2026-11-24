@@ -1,10 +1,17 @@
 export const SITE_NAME = "WakeLeap";
 export const SITE_TAGLINE = "Mission-Based Alarm Clock to Wake Up";
 export const SITE_DESCRIPTION =
-  "WakeLeap is a mission-based alarm clock app for Android, with an iOS version planned. To silence the alarm, you must complete a Mission such as an Object Hunt, push-ups, a photo, or reading a Bible verse. Built by Dialed Labs Inc.";
+  "WakeLeap is a mission-based alarm clock app for Android and iOS. To silence the alarm, you must complete a Mission such as an Object Hunt, push-ups, a photo, or reading a Bible verse. Built by Dialed Labs Inc. Listed as Wayk on Google Play.";
+// Prefer NEXT_PUBLIC_SITE_URL in deploy env. Default to the live Vercel host until
+// the custom wakeleap.app domain is attached (canonicals/sitemap must resolve).
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://wakeleap.app";
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
+  "https://wakeleap.vercel.app";
 export const DEVELOPER = "Dialed Labs Inc.";
+/** Google Play listing title */
+export const PLAY_STORE_LISTING_NAME = "Wayk - Mission Alarm Clock App";
+/** App Store listing title */
+export const APP_STORE_LISTING_NAME = "Wake Up Alarm Clock Missions";
 export const PLAY_STORE_URL =
   "https://play.google.com/store/apps/details?id=com.alrighttech.wayk";
 export const APP_STORE_URL =

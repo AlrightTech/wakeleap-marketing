@@ -7,9 +7,9 @@ import ScreenshotsCarousel from "@/components/ScreenshotsCarousel";
 import { phoneScreenshots, tabletScreenshots } from "@/lib/screenshots";
 
 export const metadata = buildMetadata({
-  title: "Download WakeLeap — Mission Alarm Clock for Android (iOS Planned)",
+  title: "Download WakeLeap — Mission Alarm Clock for Android & iOS",
   description:
-    "Download WakeLeap, the mission-based alarm clock app, on Google Play. WakeLeap supports Android 8.0+; the WakeLeap iOS version is planned (iOS 15+).",
+    "Download WakeLeap (listed as Wayk on Google Play and Wake Up Alarm Clock Missions on the App Store). Available for Android 8.0+ and iOS 15+.",
   path: "/download",
   keywords: ["download wakeleap", "wakeleap download", "mission alarm clock download", "alarm app download", "alarm clock app download", "app store alarm clock"],
 });
@@ -17,11 +17,11 @@ export const metadata = buildMetadata({
 const faqs = [
   {
     q: "Where can I download WakeLeap?",
-    a: "WakeLeap is available on Google Play for Android. An iOS version of WakeLeap for the App Store is planned.",
+    a: "WakeLeap is available on Google Play for Android (listed as Wayk - Mission Alarm Clock App) and on the App Store for iOS (listed as Wake Up Alarm Clock Missions).",
   },
   {
     q: "What are the system requirements for WakeLeap?",
-    a: "WakeLeap requires Android 8.0 (API 26) or above. The iOS version of WakeLeap will require iOS 15 or above.",
+    a: "WakeLeap requires Android 8.0 (API 26) or above, and iOS 15 or above on Apple devices.",
   },
   {
     q: "Is WakeLeap free to download?",
@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: "Which devices support WakeLeap?",
-    a: "WakeLeap supports Android 8.0 (API 26) and above; the WakeLeap iOS version is planned (iOS 15+). WakeLeap runs on phones and small tablets from 4.7 to 7 inches.",
+    a: "WakeLeap supports Android 8.0 (API 26)+ and iOS 15+. WakeLeap runs on phones and small tablets from 4.7 to 7 inches.",
   },
   {
     q: "How does WakeLeap compare to Alarmy?",
@@ -65,7 +65,7 @@ export default function DownloadPage() {
             <p className="text-sm text-muted">Download WakeLeap on the</p>
             <p className="mt-1 text-xl font-bold text-foreground">App Store</p>
             <p className="mt-3 text-sm text-muted">
-              The WakeLeap iOS version is planned, requires {MIN_IOS} when released.
+              WakeLeap is available now for iOS {MIN_IOS} (App Store listing: Wake Up Alarm Clock Missions).
             </p>
             <div className="mt-5">
               <AppStoreBadge size="md" />
@@ -101,7 +101,7 @@ export default function DownloadPage() {
               <tbody className="divide-y divide-border">
                 {[
                   ["Android", MIN_ANDROID],
-                  ["iOS", `${MIN_IOS} (planned for WakeLeap)`],
+                  ["iOS", MIN_IOS],
                   ["Screen sizes", "4.7 to 7 inches (phones and small tablets)"],
                   ["Orientation", "Portrait and landscape on tablets"],
                   ["Offline", "WakeLeap core alarm and WakeLeap missions work offline"],

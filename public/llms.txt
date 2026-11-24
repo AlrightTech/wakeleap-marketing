@@ -4,15 +4,17 @@
 
 ## App
 
-- Name: WakeLeap (also listed as "Wake Up Alarm Clock Missions" on the App Store)
-- Developer: Dialed Labs Inc.
+- Marketing name: WakeLeap
+- Google Play listing: Wayk - Mission Alarm Clock App
+- App Store listing: Wake Up Alarm Clock Missions
+- Developer (marketing site): Dialed Labs Inc.
 - Category: Alarm clock / productivity / morning routine
 - Core differentiator: Mission-based wake-up. The alarm does not stop until the Mission is completed. No tap-to-dismiss.
 
 ## Platforms
 
-- Android: available now, requires Android 8.0 (API 26) or above
-- iOS: planned, requires iOS 15 or above when released
+- Android: available now on Google Play, requires Android 8.0 (API 26) or above
+- iOS: available now on the App Store, requires iOS 15 or above
 
 ## Store URLs
 

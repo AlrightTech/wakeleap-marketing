@@ -68,6 +68,8 @@ Shift workers face harder circadian math; fixed WakeLeap alarms still help on of
 
 Explore WakeLeap mission types on the [features page](/features). Android users can [download WakeLeap](/download) tonight and set tomorrow's wake time before changing bedtime in small 15-minute steps across one to two weeks.
 
+Explore the WakeLeap circadian cluster: [sleep cycle alarm clock](/blog/sleep-cycle-alarm-clock), [sleep cycle alarm app](/blog/sleep-cycle-alarm-app), [morning routine for night owls](/blog/morning-routine-for-night-owls), and [gentle alarm clock](/blog/gentle-alarm-clock). See [WakeLeap features](/features) or [download WakeLeap](/download).
+
 ## Frequently Asked Questions About Circadian Rhythm Alarm Clocks
 
 ### Does WakeLeap track sleep stages for circadian waking?
@@ -190,6 +192,8 @@ A sleep cycle alarm clock plan breaks when people chase perfect stage data while
 Common mistakes include shrinking the wake window below what your schedule allows, trusting cycle estimates on short nights under five hours, and relying on a gentle dismiss sound that your brain learned to ignore. The Sleep Foundation circadian guidance reinforces that regular bed and wake times matter more than one supposedly ideal minute. The CDC sleep page reminds adults to prioritize adequate nightly sleep before optimizing alarms.
 
 Fix the plan by choosing one authoritative alarm minute, mirroring it in WakeLeap, disabling redundant snooze paths, and running a three-night test with the same mission. Log how quickly you feel functional at breakfast, not only how you feel at the buzzer. If inertia stays heavy, escalate to a higher-friction WakeLeap mission instead of adding another timing app. [Download WakeLeap](/download) when you are ready to standardize dismissal.
+
+Return to the cluster pillar: [circadian rhythm alarm clock](/blog/circadian-rhythm-alarm-clock). For WakeLeap missions, see [features](/features) or [download WakeLeap](/download).
 
 ## Frequently Asked Questions About Sleep Cycle Alarm Clocks
 
@@ -315,6 +319,8 @@ Night owl users should wind down with a fixed lights-out target that matches the
 For hardware-aware readers comparing lamps and apps, the [gentle alarm clock](/blog/gentle-alarm-clock) article explains how fade-in differs from sunrise simulation. WakeLeap remains the stay-awake layer no matter which evening routine you choose.
 
 Track one week of bedtimes and WakeLeap wake times in a notes app. When the cycle app and your body disagree, trust duration first—add 20 minutes of sleep before trusting a new smart window. WakeLeap missions stay constant while you tune WHEN.
+
+Return to the cluster pillar: [circadian rhythm alarm clock](/blog/circadian-rhythm-alarm-clock). For WakeLeap missions, see [features](/features) or [download WakeLeap](/download).
 
 ## Frequently Asked Questions About Sleep Cycle Alarm Apps
 

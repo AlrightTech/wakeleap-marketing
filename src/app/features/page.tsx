@@ -5,7 +5,7 @@ import Section from "@/components/Section";
 import FAQ from "@/components/FAQ";
 
 export const metadata = buildMetadata({
-  title: "WakeLeap Features — Mission Alarm Clock App for Android (iOS Planned)",
+  title: "WakeLeap Features — Mission Alarm Clock App for Android & iOS",
   description:
     "Explore WakeLeap features: mission-based alarms, Object Hunt, push-ups, photo missions, make your bed, Bible verse, snooze blocker, alarm sounds, and streaks. The alarm clock app that makes you complete a Mission to silence the alarm.",
   path: "/features",
@@ -45,7 +45,7 @@ export default function FeaturesPage() {
       <Section
         eyebrow="WakeLeap alarm clock app features"
         title="WakeLeap alarm clock app features for waking up for real"
-        subtitle="WakeLeap is a mission-based alarm clock app for Android, with an iOS version planned. Every WakeLeap alarm has one Mission, and the WakeLeap alarm does not stop until the WakeLeap Mission is done."
+        subtitle="WakeLeap is a mission-based alarm clock app for Android and iOS. Every WakeLeap alarm has one Mission, and the WakeLeap alarm does not stop until the WakeLeap Mission is done."
       >
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((f) => (

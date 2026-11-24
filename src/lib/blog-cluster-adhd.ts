@@ -93,6 +93,8 @@ WakeLeap fits an ADHD morning routine as wake-up and productivity support, not a
 For deeper mission comparisons, browse WakeLeap’s blog cluster on challenge alarms and routines linked from [features](/features).
 
 
+Continue in this WakeLeap ADHD cluster: [morning routine for ADHD](/blog/morning-routine-for-adhd), [best alarm clock app for ADHD](/blog/best-alarm-clock-app-for-adhd), [best morning routine for ADHD](/blog/best-morning-routine-for-adhd), and [ADHD getting ready in the morning](/blog/adhd-getting-ready-morning). Explore [WakeLeap features](/features) or [download WakeLeap](/download).
+
 ## Frequently Asked Questions About ADHD Morning Routines
 
 ### Does WakeLeap treat or diagnose ADHD?

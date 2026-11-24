@@ -1,5 +1,12 @@
 import { buildMetadata } from "@/lib/seo";
-import { DEVELOPER, SUPPORT_EMAIL, PLAY_STORE_URL, APP_STORE_URL } from "@/lib/site";
+import {
+  DEVELOPER,
+  SUPPORT_EMAIL,
+  PLAY_STORE_URL,
+  APP_STORE_URL,
+  PLAY_STORE_LISTING_NAME,
+  APP_STORE_LISTING_NAME,
+} from "@/lib/site";
 import Section from "@/components/Section";
 import FAQ from "@/components/FAQ";
 
@@ -32,8 +39,11 @@ export default function AboutPage() {
         <div className="max-w-3xl space-y-4 text-muted leading-relaxed">
           <p>
             WakeLeap is a mobile alarm clock application developed by Dialed Labs
-            Inc. Dialed Labs Inc. is the product owner and developer of WakeLeap,
-            available on Android through Google Play; the WakeLeap iOS version is planned (iOS 15+).
+            Inc. Dialed Labs Inc. is the product owner and developer of the WakeLeap
+            marketing brand. On Google Play the app is listed as {PLAY_STORE_LISTING_NAME};
+            on the App Store it is listed as {APP_STORE_LISTING_NAME}. Both store
+            listings describe the same mission-based wake-up product: complete a
+            task before the alarm stops.
           </p>
           <p>
             The idea behind WakeLeap is simple. Most alarm clocks stop with one tap.
@@ -49,10 +59,11 @@ export default function AboutPage() {
             without changing core alarm logic.
           </p>
           <p>
-            Dialed Labs Inc. is committed to privacy and security. All data
-            between the WakeLeap app and backend servers is encrypted with TLS 1.2 or
-            higher. Payment data is handled exclusively through Google Play
-            Billing and Apple In-App Purchase and is never stored on Dialed Labs
+            Dialed Labs Inc. is committed to privacy and security. Data between
+            the WakeLeap app and backend servers is encrypted with TLS 1.2 or
+            higher. WakeLeap is free with all features included; if paid features
+            are ever added, payments would be handled only through Google Play
+            Billing or Apple In-App Purchase and never stored on Dialed Labs
             servers.
           </p>
         </div>
@@ -76,17 +87,17 @@ export default function AboutPage() {
           </div>
           <div className="rounded-2xl border border-border bg-surface p-6">
             <h3 className="text-lg font-semibold text-foreground">Platforms</h3>
-            <p className="mt-2 text-sm text-muted">Android (Google Play) available now.</p>
-            <p className="mt-1 text-sm text-muted">iOS (App Store) planned.</p>
+            <p className="mt-2 text-sm text-muted">Android 8.0+ on Google Play — available now.</p>
+            <p className="mt-1 text-sm text-muted">iOS 15+ on the App Store — available now.</p>
           </div>
           <div className="rounded-2xl border border-border bg-surface p-6">
-            <h3 className="text-lg font-semibold text-foreground">Stores</h3>
+            <h3 className="text-lg font-semibold text-foreground">Store listings</h3>
             <div className="mt-2 flex flex-col gap-2">
               <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" className="text-sm text-accent hover:underline">
-                Google Play listing
+                Google Play: {PLAY_STORE_LISTING_NAME}
               </a>
               <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="text-sm text-accent hover:underline">
-                App Store listing
+                App Store: {APP_STORE_LISTING_NAME}
               </a>
             </div>
           </div>

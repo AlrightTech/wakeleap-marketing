@@ -96,6 +96,8 @@ WakeLeap does not require you to abandon mental wake-up rituals entirely. After 
 
 > **Try WakeLeap:** If your math alarm clock stops the noise but not the habit of staying in bed, [download WakeLeap](/download) and set an Object Hunt or Photo Mission for tomorrow.
 
+Explore the WakeLeap math and puzzle cluster: [puzzle alarm clock](/blog/puzzle-alarm-clock), [math alarm clock app](/blog/math-alarm-clock-app), [puzzle alarm clock app](/blog/puzzle-alarm-clock-app), and [alarm that makes you do math](/blog/alarm-that-makes-you-do-math). Compare mission options on [WakeLeap features](/features) or [download WakeLeap](/download).
+
 ## Frequently Asked Questions About Math Alarm Clocks
 
 ### What is a math alarm clock?
@@ -239,6 +241,8 @@ Many puzzle alarm clock apps monetize through ads, one-time purchases, or subscr
 | WakeLeap | $0, all missions | Yes, by mission design | Full [features](/features) |
 
 > **Try WakeLeap:** Replace passive puzzle wins with real movement. [Download WakeLeap](/download) and schedule a Photo Mission tonight.
+
+Return to the cluster pillar: [math alarm clock](/blog/math-alarm-clock). For WakeLeap missions, see [features](/features) or [download WakeLeap](/download).
 
 ## Frequently Asked Questions About Puzzle Alarm Clocks
 
@@ -393,6 +397,8 @@ iOS support for WakeLeap is planned (iOS 15+). Android minimum is 8.0+. Review l
 
 > **Try WakeLeap:** If your math alarm clock app stops ringing but not sleeping, [download WakeLeap](/download) and set a mission tonight.
 
+Return to the cluster pillar: [math alarm clock](/blog/math-alarm-clock). For WakeLeap missions, see [features](/features) or [download WakeLeap](/download).
+
 ## Frequently Asked Questions About Math Alarm Clock Apps
 
 ### What is the best math alarm clock app?
@@ -539,6 +545,8 @@ Watch for vague “AI adaptive puzzles” without alarm timing specs, mandatory 
 WakeLeap remains $0 with all missions. Puzzle alarm clock apps frequently charge monthly for premium puzzles or ad removal. Total cost of ownership favors WakeLeap for users who would otherwise subscribe.
 
 > **Try WakeLeap:** Trade mini-game fatigue for missions that pull you upright. [Download WakeLeap](/download) tonight.
+
+Return to the cluster pillar: [math alarm clock](/blog/math-alarm-clock). For WakeLeap missions, see [features](/features) or [download WakeLeap](/download).
 
 ## Frequently Asked Questions About Puzzle Alarm Clock Apps
 
@@ -701,6 +709,8 @@ Exercise missions like WakeLeap push-ups should respect physical limits. Modify 
 WakeLeap is free with all missions on Android 8.0+. iOS 15+ is planned. No subscription. Missions work offline once configured.
 
 > **Try WakeLeap:** If your math alarm stops sound but mornings still fail, [download WakeLeap](/download) and pick a movement mission.
+
+Return to the cluster pillar: [math alarm clock](/blog/math-alarm-clock). For WakeLeap missions, see [features](/features) or [download WakeLeap](/download).
 
 ## Frequently Asked Questions About Alarms That Make You Do Math
 

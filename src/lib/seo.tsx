@@ -15,16 +15,21 @@ export function buildMetadata({
   path = "/",
   ogImage = "/og.png",
   keywords,
+  ogType = "website",
 }: {
   title: string;
   description: string;
   path?: string;
   ogImage?: string;
   keywords?: string[];
+  ogType?: "website" | "article";
 }): Metadata {
   const url = `${SITE_URL}${path}`;
+  const imageUrl = ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogImage}`;
+  // Titles already include the brand — avoid "| WakeLeap" duplication from the root template.
+  const pageTitle = { absolute: title };
   return {
-    title,
+    title: pageTitle,
     description,
     keywords: keywords ?? [SITE_NAME],
     alternates: { canonical: url },
@@ -33,14 +38,14 @@ export function buildMetadata({
       description,
       url,
       siteName: SITE_NAME,
-      type: "website",
-      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+      type: ogType,
+      images: [{ url: imageUrl, width: 1200, height: 630, alt: title }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [ogImage],
+      images: [imageUrl],
     },
     robots: {
       index: true,
@@ -84,8 +89,13 @@ export function softwareApplicationSchema() {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: SITE_NAME,
+    alternateName: [
+      "Wayk",
+      "Wayk - Mission Alarm Clock App",
+      "Wake Up Alarm Clock Missions",
+    ],
     applicationCategory: "UtilitiesApplication",
-    operatingSystem: "Android 8.0+",
+    operatingSystem: "Android 8.0+, iOS 15+",
     offers: {
       "@type": "Offer",
       price: "0",
@@ -94,15 +104,13 @@ export function softwareApplicationSchema() {
     },
     description: SITE_DESCRIPTION,
     url: SITE_URL,
-    downloadUrl: "https://play.google.com/store/apps/details?id=com.alrighttech.wayk",
-    installUrl: "https://play.google.com/store/apps/details?id=com.alrighttech.wayk",
-    sameAs: [
-      "https://play.google.com/store/apps/details?id=com.alrighttech.wayk",
-      "https://apps.apple.com/us/app/wake-up-alarm-clock-missions/id6817215800",
-    ],
+    image: `${SITE_URL}/og.png`,
+    downloadUrl: PLAY_STORE_URL,
+    installUrl: PLAY_STORE_URL,
+    sameAs: [PLAY_STORE_URL, APP_STORE_URL],
     author: {
       "@type": "Organization",
-      name: "Dialed Labs Inc.",
+      name: DEVELOPER,
     },
   };
 }
@@ -140,13 +148,23 @@ export function articleSchema({
     headline: title,
     description,
     url: `${SITE_URL}${path}`,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}${path}`,
+    },
+    image: [`${SITE_URL}/og.png`],
     datePublished,
     dateModified,
     author: { "@type": "Person", name: author },
     publisher: {
       "@type": "Organization",
-      name: "Dialed Labs Inc.",
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
+      name: DEVELOPER,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/logo.png`,
+        width: 512,
+        height: 512,
+      },
     },
   };
 }

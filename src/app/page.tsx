@@ -18,9 +18,9 @@ import {
 import { phoneScreenshots, tabletScreenshots } from "@/lib/screenshots";
 
 export const metadata = buildMetadata({
-  title: "WakeLeap — Mission Alarm Clock App for Heavy Sleepers (Android — iOS Planned)",
+  title: "WakeLeap — Mission Alarm Clock App for Heavy Sleepers",
   description:
-    "WakeLeap is a mission alarm clock app for Android, with an iOS version planned. Wake up on the first alarm: complete a Mission such as an Object Hunt, push-ups, a photo, making your bed, or reading a Bible verse before the alarm stops. WakeLeap is free to use, with all features included. For heavy sleepers and morning routines.",
+    "WakeLeap is a mission alarm clock app for Android and iOS (listed as Wayk on Google Play). Wake up on the first alarm: complete a Mission such as an Object Hunt, push-ups, a photo, making your bed, or reading a Bible verse before the alarm stops. WakeLeap is free, with all features included.",
   path: "/",
   keywords: [
     "mission alarm",
@@ -47,7 +47,7 @@ export const metadata = buildMetadata({
 const homeFaqs = [
   {
     q: "What is WakeLeap and how does the mission alarm work?",
-    a: "WakeLeap is a mission-based alarm clock app built by Dialed Labs Inc. for Android, with an iOS version planned. Instead of tapping a button to dismiss an alarm, you must complete a Mission such as an Object Hunt, push-ups, a photo, making your bed, or reading a Bible verse before the alarm stops.",
+    a: "WakeLeap is a mission-based alarm clock app built by Dialed Labs Inc. for Android and iOS. Instead of tapping a button to dismiss an alarm, you must complete a Mission such as an Object Hunt, push-ups, a photo, making your bed, or reading a Bible verse before the alarm stops.",
   },
   {
     q: "How much does WakeLeap cost?",
@@ -59,15 +59,15 @@ const homeFaqs = [
   },
   {
     q: "Which devices and operating systems support WakeLeap?",
-    a: "WakeLeap supports Android 8.0 (API 26) and above; the WakeLeap iOS version is planned (iOS 15+). WakeLeap runs on phones and small tablets from 4.7 to 7 inches in both portrait and landscape on tablets.",
+    a: "WakeLeap supports Android 8.0 (API 26)+ on Google Play (listed as Wayk - Mission Alarm Clock App) and iOS 15+ on the App Store (listed as Wake Up Alarm Clock Missions). WakeLeap runs on phones and small tablets from 4.7 to 7 inches.",
   },
   {
     q: "How does WakeLeap compare to Alarmy and other alarm apps?",
-    a: "WakeLeap and Alarmy both require a task to dismiss the alarm. WakeLeap offers five focused mission types, configurable snooze with a disable option, and an iOS version planned. Alarmy offers a larger mission library today.",
+    a: "WakeLeap and Alarmy both require a task to dismiss the alarm. WakeLeap offers five focused mission types, configurable snooze with a disable option, and is available on iOS. Alarmy offers a larger mission library today.",
   },
   {
     q: "Is my data safe and private with WakeLeap?",
-    a: "Yes. WakeLeap encrypts all data in transit with TLS 1.2 or higher, hashes passwords with bcrypt or Argon2, handles payments exclusively through Google Play Billing and Apple In-App Purchase, and complies with GDPR and CCPA. You can request complete data deletion within 30 days.",
+    a: "Yes. WakeLeap encrypts data in transit with TLS 1.2 or higher, hashes passwords with bcrypt or Argon2, and complies with GDPR and CCPA. WakeLeap is free with no paid tier today; if paid features are ever added, payments would go through Google Play Billing or Apple In-App Purchase only. You can request complete data deletion within 30 days.",
   },
 ];
 
@@ -114,15 +114,15 @@ export default function Home() {
                 Mission-Based Alarm Clock App
               </p>
               <h1 className="mt-5 text-4xl md:text-5xl lg:text-[3.35rem] font-extrabold tracking-tight leading-[1.05]">
-                WakeLeap — Mission Alarm Clock App for Heavy Sleepers (Android &amp; iOS)
+                WakeLeap — Mission Alarm Clock App for Heavy Sleepers
               </h1>
               <p className="mt-6 text-lg md:text-xl text-muted leading-relaxed">
-                WakeLeap is a mission-based alarm clock app for Android, with an
-                iOS version planned, built by Dialed Labs Inc. for heavy snoozers
-                and morning-routine seekers. WakeLeap requires you to complete a
-                Mission such as an Object Hunt, push-ups, a photo, making your
-                bed, or reading a Bible verse before the alarm stops, so one tap
-                is never enough to silence it.
+                WakeLeap is a mission-based alarm clock app for Android and iOS,
+                built by Dialed Labs Inc. for heavy snoozers and morning-routine
+                seekers. WakeLeap requires you to complete a Mission such as an
+                Object Hunt, push-ups, a photo, making your bed, or reading a
+                Bible verse before the alarm stops, so one tap is never enough to
+                silence it.
               </p>
               <p className="mt-4 flex flex-wrap gap-x-3 gap-y-1 text-sm md:text-base text-muted">
                 <span className="text-foreground/90">±2s accuracy</span>
@@ -197,7 +197,7 @@ export default function Home() {
           <div className="space-y-4 text-muted leading-relaxed">
             <p>
               WakeLeap is a mobile alarm clock application built by Dialed Labs Inc.
-              for Android, with an iOS version planned. The core idea of WakeLeap is
+              for Android and iOS. The core idea of WakeLeap is
               simple: an alarm should not be silenced by a tap. WakeLeap requires the
               user to complete a physical or cognitive task, called a Mission,
               before the alarm stops sounding.

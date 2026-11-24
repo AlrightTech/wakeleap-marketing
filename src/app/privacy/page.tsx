@@ -16,7 +16,7 @@ export default function PrivacyPage() {
         <p>
           This Privacy Policy describes how Dialed Labs Inc. (we, us, our)
           collects, uses, and protects information when you use WakeLeap, our
-          mission-based alarm clock app for Android, with an iOS version planned (the App).
+          mission-based alarm clock app for Android and iOS (the App).
         </p>
         <h3 className="text-lg font-semibold text-foreground">Information we collect</h3>
         <p>
