@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
-import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from "./site";
+import {
+  SITE_NAME,
+  SITE_URL,
+  SITE_DESCRIPTION,
+  SITE_LOGO_URL,
+  DEVELOPER,
+  PLAY_STORE_URL,
+  APP_STORE_URL,
+} from "./site";
 
 export function buildMetadata({
   title,
@@ -48,24 +56,41 @@ export function buildMetadata({
   };
 }
 
+export function organizationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: SITE_NAME,
+    legalName: DEVELOPER,
+    url: SITE_URL,
+    logo: { "@type": "ImageObject", url: SITE_LOGO_URL, width: 512, height: 512 },
+    sameAs: [PLAY_STORE_URL, APP_STORE_URL],
+  };
+}
+
+export function webSiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: SITE_URL,
+    inLanguage: ["en"],
+    publisher: { "@type": "Organization", name: SITE_NAME },
+  };
+}
+
 export function softwareApplicationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: SITE_NAME,
     applicationCategory: "UtilitiesApplication",
-    operatingSystem: "Android 8.0+, iOS 15+",
+    operatingSystem: "Android 8.0+",
     offers: {
       "@type": "Offer",
       price: "0",
       priceCurrency: "USD",
       description: "Free to use, with all features included",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.6",
-      ratingCount: "1200",
-      bestRating: "5",
     },
     description: SITE_DESCRIPTION,
     url: SITE_URL,

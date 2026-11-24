@@ -35,17 +35,31 @@
 ## Core URLs
 
 - Home: /
+- About: /about
+- Editors: /editors
+- Contact: /contact
 - Features: /features
 - Pricing: /pricing
 - Compare: /compare
 - Download: /download
-- About: /about
 - Blog: /blog
-- Contact: /contact
 - Privacy: /privacy
 - Terms: /terms
 - Sitemap: /sitemap.xml
 - Robots: /robots.txt
+
+## Blog pillar URLs
+
+- Mission alarms: /blog/picture-alarm-clock
+- Stop snoozing: /blog/how-to-stop-snoozing
+- Morning routines: /blog/morning-routine
+- Alarm apps: /blog/alarm-clock-app
+- Alarm troubleshooting: /blog/alarm-sound
+- No-snooze alarms: /blog/no-snooze-alarm-clock
+- Vibrating alarms: /blog/vibrating-alarm-clock
+- Math and puzzle alarms: /blog/math-alarm-clock
+- Circadian wake timing: /blog/circadian-rhythm-alarm-clock
+- ADHD mornings: /blog/adhd-morning-routine
 
 ## Key facts
 

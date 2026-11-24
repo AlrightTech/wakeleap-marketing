@@ -18,7 +18,7 @@ export const features: Feature[] = [
     description:
       "A mission alarm clock from WakeLeap requires you to finish a physical or cognitive task before the alarm stops. No tap-to-dismiss.",
     body: [
-      "A mission alarm clock is an alarm clock where silencing the alarm requires completing a task. WakeLeap is a mission alarm clock app built by Dialed Labs Inc. for Android and iOS. In WakeLeap, every alarm has exactly one Mission attached to it, and the alarm sound does not stop until that Mission is completed.",
+      "A mission alarm clock is an alarm clock where silencing the alarm requires completing a task. WakeLeap is a mission alarm clock app built by Dialed Labs Inc. for Android, with an iOS version planned. In WakeLeap, every alarm has exactly one Mission attached to it, and the alarm sound does not stop until that Mission is completed.",
       "Standard alarm clocks let you tap a button to dismiss the sound. That tap is easy to do while half asleep, which is why many people snooze three to five times every morning. WakeLeap removes the tap-to-dismiss path. The alarm keeps playing, the screen stays awake, and the only way to silence WakeLeap is to finish the Mission.",
       "WakeLeap offers five mission types at launch: Object Hunt, Physical Exercise, Photo Mission, Make Your Bed, and Read a Bible Verse. The mission engine in WakeLeap uses a plugin pattern, so more mission types can be added without changing core alarm logic.",
     ],

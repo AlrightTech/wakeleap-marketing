@@ -7,7 +7,7 @@ export const routinePosts: Post[] = [
     description:
       "Build a morning routine that sticks in 2026 with science-backed steps, a sample schedule, and WakeLeap mission alarms that make waking up an action, not a decision.",
     datePublished: "2026-05-10",
-    dateModified: "2026-11-23",
+    dateModified: "2026-11-24",
     author: "Dialed Labs Editorial Team",
     content: `## What Is a Morning Routine?
 
@@ -15,7 +15,6 @@ A morning routine is a repeatable sequence of actions you take after waking, and
 
 A morning routine works because it turns the first minutes of the day into a predictable system. The [Sleep Foundation](https://www.sleepfoundation.org/sleep-hygiene/healthy-sleep-tips) notes that consistent sleep and wake habits support better sleep quality, and a morning routine is the daytime side of that consistency. WakeLeap supports a morning routine by firing within approximately ±2 seconds of the set time and loading the mission screen in about 1 second, so the routine starts when you planned it.
 
-![A person completing a WakeLeap mission alarm as part of a consistent morning routine in 2026](IMAGE_PLACEHOLDER_morning-routine-hero.png)
 
 ## Why Does a Morning Routine Matter in 2026?
 
@@ -46,7 +45,7 @@ A practical morning routine in 2026 uses habit stacking: complete one anchor act
 
 ## What Does a Good Morning Routine Look Like?
 
-A good morning routine looks like a short, realistic sequence that you can repeat on busy weekdays and slower weekends. The best morning routine is not the longest one; it is the one you can maintain. WakeLeap helps by keeping the wake-up trigger consistent on Android 8.0+ and iOS 15+, with core alarm functionality working offline and settings stored on device.
+A good morning routine looks like a short, realistic sequence that you can repeat on busy weekdays and slower weekends. The best morning routine is not the longest one; it is the one you can maintain. WakeLeap helps by keeping the wake-up trigger consistent on Android 8.0+ (iOS 15+ planned), with core alarm functionality working offline and settings stored on device.
 
 The table below compares a common unstructured morning with a WakeLeap-supported morning routine in 2026.
 
@@ -59,7 +58,7 @@ The table below compares a common unstructured morning with a WakeLeap-supported
 | Consistency tracking | No visible record | WakeLeap streak counter tracks consecutive completions |
 | Flexibility | Chaotic or rigid | Configurable snooze limits, or snooze disabled entirely |
 
-A good morning routine also adapts to your goal. If you struggle with [sleep inertia](/blog/sleep-inertia), choose a WakeLeap Physical Exercise or Object Hunt Mission. If you want a calmer start, a WakeLeap Read a Bible Verse or Photo Mission can fit your morning routine. For people who need help [waking up early](/blog/wake-up-early) or who identify as a [heavy sleeper](/blog/heavy-sleeper-wake-up), WakeLeap's mission-based flow is more active than a standard alarm.
+A good morning routine also adapts to your goal. If you struggle with [sleep inertia](/blog/sleep-inertia), choose a WakeLeap Physical Exercise or Object Hunt Mission. If you want a calmer start, a WakeLeap Read a Bible Verse or Photo Mission can fit your morning routine. For people who need help [waking up early](/blog/wake-up-early) or who identify as a [heavy sleeper](/blog/heavy-sleeper-wake-up), WakeLeap's mission-based flow is more active than a standard alarm. If task initiation is the hard part, see the WakeLeap [ADHD morning routine](/blog/adhd-morning-routine) guide for external-structure setups.
 
 ## How Can WakeLeap Support Your Morning Routine?
 
@@ -70,7 +69,7 @@ WakeLeap supports your morning routine by turning the alarm from a passive notif
 - **Fast trigger:** WakeLeap triggers within ~±2 seconds, and the mission screen loads in about 1 second.
 - **Snooze control:** WakeLeap supports configurable snooze limits, and snooze can be disabled for a stricter morning routine.
 - **Streak counter:** WakeLeap tracks consistency so you can see your morning routine progress.
-- **Free tier:** WakeLeap has a free tier, with a premium 3-day free trial then approximately $8 USD/year.
+- **Free tier:** WakeLeap is free to use — all features included, no subscription or trial.
 
 WakeLeap also connects naturally to related habits. If you want to build broader [daily routines](/blog/daily-routine), start with the morning routine anchor. If you need specific [morning habits](/blog/morning-habits) or a time-blocked [morning schedule](/blog/morning-schedule), WakeLeap can serve as the first block in every plan. For a more active wake-up, explore WakeLeap's [Object Hunt alarm](/blog/object-hunt-alarm), [push-up alarm](/blog/pushup-alarm), [picture alarm clock](/blog/picture-alarm-clock), or [challenge alarm clock](/blog/challenge-alarm-clock) approaches.
 
@@ -100,10 +99,10 @@ The best first step in a morning routine is getting out of bed immediately after
 Yes, WakeLeap can help you stop snoozing during your morning routine by using configurable snooze limits or disabling snooze entirely. WakeLeap requires a Mission before the alarm stops, which makes the morning routine start with action. For more strategies, see [how to stop snoozing](/blog/how-to-stop-snoozing).
 
 ### Does WakeLeap work offline for a morning routine?
-Yes, WakeLeap core alarm and Mission validation work offline, so your morning routine can run without internet. WakeLeap stores settings on device and works on Android 8.0+ and iOS 15+. Internet is only needed for account-related sync, not the core morning routine alarm.
+Yes, WakeLeap core alarm and Mission validation work offline, so your morning routine can run without internet. WakeLeap stores settings on device and works on Android 8.0+ (iOS 15+ planned). Internet is only needed for account-related sync, not the core morning routine alarm.
 
 ### Is WakeLeap free to use for building a morning routine?
-WakeLeap has a free tier that can support a morning routine, and WakeLeap premium offers a 3-day free trial then approximately $8 USD/year. All five WakeLeap mission types are available: Object Hunt, Physical Exercise, Photo Mission, Make Your Bed, and Read a Bible Verse. You can start a morning routine with WakeLeap before deciding on premium.
+WakeLeap is free to use, with all features included. All five WakeLeap mission types are available: Object Hunt, Physical Exercise, Photo Mission, Make Your Bed, and Read a Bible Verse. You can start a morning routine with WakeLeap today.
 `,
     faqs: [
       {
@@ -120,11 +119,11 @@ WakeLeap has a free tier that can support a morning routine, and WakeLeap premiu
       },
       {
         q: "Does WakeLeap work offline for a morning routine?",
-        a: "Yes, WakeLeap core alarm and Mission validation work offline, so your morning routine can run without internet. WakeLeap stores settings on device and works on Android 8.0+ and iOS 15+. Internet is only needed for account-related sync, not the core morning routine alarm.",
+        a: "Yes, WakeLeap core alarm and Mission validation work offline, so your morning routine can run without internet. WakeLeap stores settings on device and works on Android 8.0+ (iOS 15+ planned). Internet is only needed for account-related sync, not the core morning routine alarm.",
       },
       {
         q: "Is WakeLeap free to use for building a morning routine?",
-        a: "WakeLeap has a free tier that can support a morning routine, and WakeLeap premium offers a 3-day free trial then approximately $8 USD/year. All five WakeLeap mission types are available: Object Hunt, Physical Exercise, Photo Mission, Make Your Bed, and Read a Bible Verse. You can start a morning routine with WakeLeap before deciding on premium.",
+        a: "WakeLeap is free to use, with all features included. All five WakeLeap mission types are available: Object Hunt, Physical Exercise, Photo Mission, Make Your Bed, and Read a Bible Verse. You can start a morning routine with WakeLeap today.",
       },
     ],
   },
@@ -134,7 +133,7 @@ WakeLeap has a free tier that can support a morning routine, and WakeLeap premiu
     description:
       "Learn how to build a daily routine in 2026 with habit stacking, morning and evening blocks, and WakeLeap mission alarms that keep your wake-up habit consistent.",
     datePublished: "2026-05-10",
-    dateModified: "2026-11-23",
+    dateModified: "2026-11-24",
     author: "Dialed Labs Editorial Team",
     content: `## What Is a Daily Routine?
 
@@ -142,7 +141,6 @@ A daily routine is a repeatable structure for the key actions you do each day, a
 
 A daily routine connects morning, daytime, and evening behaviors into one system. When the wake-up time drifts, the rest of the daily routine drifts with it. WakeLeap helps stabilize a daily routine by triggering within approximately ±2 seconds of the set alarm time and loading the mission screen in about 1 second. That reliability makes WakeLeap a practical starting point for anyone building a daily routine.
 
-![A daily routine planner showing morning and evening blocks anchored by a WakeLeap alarm](IMAGE_PLACEHOLDER_daily-routine-planner.png)
 
 ## Why Is a Consistent Daily Routine Important?
 
@@ -160,7 +158,7 @@ The [CDC](https://www.cdc.gov/sleep/about/index.html) recommends at least 7 hour
 
 You build a daily routine around wake-up by choosing one fixed wake time, creating a simple morning block, and protecting an evening wind-down block. A daily routine should start at the alarm because wake-up is the first domino. WakeLeap makes that domino reliable by requiring one of five Missions: Object Hunt, Physical Exercise (push-ups, manual confirmation at launch; sensor counting planned), Photo Mission, Make Your Bed, or Read a Bible Verse.
 
-A daily routine built around WakeLeap uses habit stacking. The WakeLeap Mission is the anchor habit; after it, you stack the next action. [Sleep Education by the American Academy of Sleep Medicine](https://sleepeducation.org/healthy-sleep/healthy-sleep-habits/) recommends consistent routines and healthy habits around sleep, which fits the daily routine model of stable morning and evening blocks. WakeLeap works on Android 8.0+ and iOS 15+, stores settings on device, and its core alarm works offline, so the daily routine is dependable even without internet.
+A daily routine built around WakeLeap uses habit stacking. The WakeLeap Mission is the anchor habit; after it, you stack the next action. [Sleep Education by the American Academy of Sleep Medicine](https://sleepeducation.org/healthy-sleep/healthy-sleep-habits/) recommends consistent routines and healthy habits around sleep, which fits the daily routine model of stable morning and evening blocks. WakeLeap works on Android 8.0+ (iOS 15+ planned), stores settings on device, and its core alarm works offline, so the daily routine is dependable even without internet.
 
 **How to build a daily routine in 2026:**
 1. **Set a fixed wake time:** Pick a WakeLeap alarm time you can keep on most days.
@@ -197,7 +195,7 @@ WakeLeap makes a daily routine easier to maintain by reducing the chance that th
 - **Configurable snooze:** WakeLeap lets you set snooze limits or disable snooze, which protects the daily routine from drift.
 - **Streak counter:** WakeLeap tracks consecutive completions, giving your daily routine a visible progress signal.
 - **Offline reliability:** WakeLeap core alarm and Mission validation work offline; settings stay on device.
-- **Accessible pricing:** WakeLeap has a free tier, plus a premium 3-day free trial then approximately $8 USD/year.
+- **Free access:** WakeLeap is free to use — all features included, no subscription or trial.
 
 WakeLeap also fits different daily routine styles. If you need a stronger jolt, try a [push-up alarm](/blog/pushup-alarm) or [Object Hunt alarm](/blog/object-hunt-alarm). If you prefer a visual cue, a [picture alarm clock](/blog/picture-alarm-clock) approach can work. For app comparisons, see [WakeLeap vs Alarmy](/blog/wakeleap-vs-alarmy), [alarm clock app features](/blog/alarm-app-features), and [best alarm clock app options](/blog/alarm-clock-app). If alarm reliability is an issue, review [alarm sound](/blog/alarm-sound) and [battery optimization for alarms](/blog/battery-optimization-alarm).
 
@@ -227,7 +225,7 @@ A daily routine usually takes several weeks of repetition before it feels automa
 Yes, WakeLeap can help with a daily routine if you are a heavy sleeper because it requires a Mission before the alarm stops. WakeLeap Missions like Object Hunt or Physical Exercise add movement, which can be more effective than a standard alarm. You can also review [heavy sleeper wake-up tips](/blog/heavy-sleeper-wake-up).
 
 ### Does WakeLeap work without internet for my daily routine?
-Yes, WakeLeap core alarm and Mission validation work offline, so your daily routine can continue without internet access. WakeLeap stores settings on device and runs on Android 8.0+ and iOS 15+. This makes WakeLeap reliable for a daily routine at home or while traveling.
+Yes, WakeLeap core alarm and Mission validation work offline, so your daily routine can continue without internet access. WakeLeap stores settings on device and runs on Android 8.0+ (iOS 15+ planned). This makes WakeLeap reliable for a daily routine at home or while traveling.
 
 ### What WakeLeap Mission is best for a daily routine?
 The best WakeLeap Mission for a daily routine depends on your goal. Object Hunt or Physical Exercise works well for energy, Make Your Bed supports immediate order, Photo Mission adds movement and light, and Read a Bible Verse supports a reflective daily routine. WakeLeap lets you choose the Mission that fits your daily routine.
@@ -247,7 +245,7 @@ The best WakeLeap Mission for a daily routine depends on your goal. Object Hunt 
       },
       {
         q: "Does WakeLeap work without internet for my daily routine?",
-        a: "Yes, WakeLeap core alarm and Mission validation work offline, so your daily routine can continue without internet access. WakeLeap stores settings on device and runs on Android 8.0+ and iOS 15+. This makes WakeLeap reliable for a daily routine at home or while traveling.",
+        a: "Yes, WakeLeap core alarm and Mission validation work offline, so your daily routine can continue without internet access. WakeLeap stores settings on device and runs on Android 8.0+ (iOS 15+ planned). This makes WakeLeap reliable for a daily routine at home or while traveling.",
       },
       {
         q: "What WakeLeap Mission is best for a daily routine?",
@@ -261,7 +259,7 @@ The best WakeLeap Mission for a daily routine depends on your goal. Object Hunt 
     description:
       "Discover morning habits that make waking up easier in 2026, backed by sleep science and powered by WakeLeap mission alarms that turn intention into action.",
     datePublished: "2026-05-10",
-    dateModified: "2026-11-23",
+    dateModified: "2026-11-24",
     author: "Dialed Labs Editorial Team",
     content: `## What Are Morning Habits?
 
@@ -269,7 +267,6 @@ Morning habits are small, repeatable actions you perform after waking, and the r
 
 Morning habits matter because the first 30 to 60 minutes after waking set the tone for attention and energy. The [Sleep Foundation](https://www.sleepfoundation.org/sleep-hygiene/healthy-sleep-tips) recommends consistent sleep habits, and morning habits are the visible part of that consistency. WakeLeap supports morning habits by triggering within approximately ±2 seconds and loading the mission screen in about 1 second, so the first habit happens on schedule.
 
-![Morning habits checklist with WakeLeap mission alarm on a phone beside water and sunlight](IMAGE_PLACEHOLDER_morning-habits-checklist.png)
 
 ## Which Morning Habits Make Waking Up Easier?
 
@@ -291,7 +288,7 @@ Below are practical morning habits for 2026, with WakeLeap as the wake-up anchor
 
 Morning habits and WakeLeap work together because WakeLeap creates a reliable cue, and morning habits provide the routine that follows that cue. A morning habit sticks when the trigger is consistent. WakeLeap provides that trigger with a mission-based alarm that cannot be dismissed without completing the selected task.
 
-WakeLeap includes five mission types that map directly to morning habits: Object Hunt, Physical Exercise (push-ups, manual confirmation at launch; sensor counting planned), Photo Mission, Make Your Bed, and Read a Bible Verse. WakeLeap works on Android 8.0+ and iOS 15+, and its core alarm and Mission validation work offline. For morning habits, that means the wake-up cue is available even when your phone is in airplane mode or has poor connectivity.
+WakeLeap includes five mission types that map directly to morning habits: Object Hunt, Physical Exercise (push-ups, manual confirmation at launch; sensor counting planned), Photo Mission, Make Your Bed, and Read a Bible Verse. WakeLeap works on Android 8.0+ (iOS 15+ planned), and its core alarm and Mission validation work offline. For morning habits, that means the wake-up cue is available even when your phone is in airplane mode or has poor connectivity.
 
 | Morning habit | Why it helps in 2026 | WakeLeap feature | Best for |
 |---|---|---|---|
@@ -332,7 +329,7 @@ In 2026, consistency is easier when you measure it. WakeLeap includes a streak c
 - **Protect the evening:** Morning habits are easier when bedtime supports enough sleep.
 - **Check app reliability:** Review [alarm on silent mode](/blog/alarm-on-silent-mode) and [battery optimization alarm settings](/blog/battery-optimization-alarm) so WakeLeap morning habits run reliably.
 
-WakeLeap is free to use with a free tier, and premium offers a 3-day free trial then approximately $8 USD/year. The core WakeLeap alarm works offline, settings stay on device, and WakeLeap runs on Android 8.0+ and iOS 15+. These practical details matter because morning habits only work when the tool behind them is reliable.
+WakeLeap is free to use, with all features included. The core WakeLeap alarm works offline, settings stay on device, and WakeLeap runs on Android 8.0+ (iOS 15+ planned). These practical details matter because morning habits only work when the tool behind them is reliable.
 
 ## FAQ: Morning Habits Questions
 
@@ -351,7 +348,7 @@ The best WakeLeap Mission for morning habits depends on your goal. Physical Exer
 Yes, morning habits can help you stop snoozing when they remove the option to stay in bed. WakeLeap supports anti-snooze morning habits by requiring a Mission and allowing snooze to be disabled. For more, see [how to stop snoozing](/blog/how-to-stop-snoozing).
 
 ### Do I need internet for WakeLeap morning habits?
-No, you do not need internet for core WakeLeap morning habits. WakeLeap core alarm and Mission validation work offline, and settings are stored on device. WakeLeap works on Android 8.0+ and iOS 15+, making morning habits reliable even without connectivity.
+No, you do not need internet for core WakeLeap morning habits. WakeLeap core alarm and Mission validation work offline, and settings are stored on device. WakeLeap works on Android 8.0+ (iOS 15+ planned), making morning habits reliable even without connectivity.
 `,
     faqs: [
       {
@@ -372,7 +369,7 @@ No, you do not need internet for core WakeLeap morning habits. WakeLeap core ala
       },
       {
         q: "Do I need internet for WakeLeap morning habits?",
-        a: "No, you do not need internet for core WakeLeap morning habits. WakeLeap core alarm and Mission validation work offline, and settings are stored on device. WakeLeap works on Android 8.0+ and iOS 15+, making morning habits reliable even without connectivity.",
+        a: "No, you do not need internet for core WakeLeap morning habits. WakeLeap core alarm and Mission validation work offline, and settings are stored on device. WakeLeap works on Android 8.0+ (iOS 15+ planned), making morning habits reliable even without connectivity.",
       },
     ],
   },
@@ -382,7 +379,7 @@ No, you do not need internet for core WakeLeap morning habits. WakeLeap core ala
     description:
       "Plan a morning schedule for your first hour in 2026 with time blocks, WakeLeap mission alarms, and a practical template you can repeat every weekday.",
     datePublished: "2026-05-10",
-    dateModified: "2026-11-23",
+    dateModified: "2026-11-24",
     author: "Dialed Labs Editorial Team",
     content: `## What Is a Morning Schedule?
 
@@ -390,7 +387,6 @@ A morning schedule is a time-blocked plan for what you do after waking, and a go
 
 A morning schedule differs from a vague intention because it assigns time to actions. Instead of hoping to wake up well, a morning schedule defines the first 60 minutes. WakeLeap supports a morning schedule by triggering within approximately ±2 seconds of the set time and loading the mission screen in about 1 second. That precision matters when your morning schedule has tight blocks.
 
-![A first-hour morning schedule template with WakeLeap alarm and time blocks](IMAGE_PLACEHOLDER_morning-schedule-template.png)
 
 ## Why Should You Plan the First Hour of Your Morning Schedule?
 
@@ -438,7 +434,7 @@ This morning schedule template can be adapted for different lifestyles. Students
 
 WakeLeap keeps your morning schedule on track by protecting the start time and preventing passive dismissal. A morning schedule collapses when the first block slips by 10 or 20 minutes. WakeLeap reduces that risk by requiring a Mission before the alarm stops, with configurable snooze limits or snooze disabled.
 
-WakeLeap is built by Dialed Labs Inc. and works on Android 8.0+ and iOS 15+. Its core alarm and Mission validation work offline, and settings are stored on device, which makes WakeLeap dependable for a morning schedule. WakeLeap also has a free tier, with a premium 3-day free trial then approximately $8 USD/year.
+WakeLeap is built by Dialed Labs Inc. and works on Android 8.0+ (iOS 15+ planned). Its core alarm and Mission validation work offline, and settings are stored on device, which makes WakeLeap dependable for a morning schedule. WakeLeap also has all five missions available with no subscription or trial.
 
 **WakeLeap features for a morning schedule:**
 - **Precise start:** WakeLeap triggers within ~±2 seconds, so your morning schedule begins on time.
@@ -479,7 +475,7 @@ Yes, WakeLeap can replace a regular alarm in your morning schedule because it fu
 The best WakeLeap Mission for a morning schedule depends on your first block. Make Your Bed fits a tidy-start morning schedule, Physical Exercise fits an energy-focused morning schedule, Photo Mission fits a light-and-movement morning schedule, and Read a Bible Verse fits a reflective morning schedule. WakeLeap lets you change Missions as your morning schedule evolves.
 
 ### Does WakeLeap work offline for a morning schedule?
-Yes, WakeLeap core alarm and Mission validation work offline, so your morning schedule is not dependent on internet. WakeLeap stores settings on device and supports Android 8.0+ and iOS 15+. This offline reliability makes WakeLeap useful for a consistent morning schedule at home or while traveling.
+Yes, WakeLeap core alarm and Mission validation work offline, so your morning schedule is not dependent on internet. WakeLeap stores settings on device and supports Android 8.0+ (iOS 15+ planned). This offline reliability makes WakeLeap useful for a consistent morning schedule at home or while traveling.
 `,
     faqs: [
       {
@@ -500,7 +496,7 @@ Yes, WakeLeap core alarm and Mission validation work offline, so your morning sc
       },
       {
         q: "Does WakeLeap work offline for a morning schedule?",
-        a: "Yes, WakeLeap core alarm and Mission validation work offline, so your morning schedule is not dependent on internet. WakeLeap stores settings on device and supports Android 8.0+ and iOS 15+. This offline reliability makes WakeLeap useful for a consistent morning schedule at home or while traveling.",
+        a: "Yes, WakeLeap core alarm and Mission validation work offline, so your morning schedule is not dependent on internet. WakeLeap stores settings on device and supports Android 8.0+ (iOS 15+ planned). This offline reliability makes WakeLeap useful for a consistent morning schedule at home or while traveling.",
       },
     ],
   },

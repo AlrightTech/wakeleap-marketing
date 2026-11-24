@@ -1,4 +1,4 @@
-import { buildMetadata, JsonLd, faqPageSchema } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo";
 import { DEVELOPER, SUPPORT_EMAIL, PLAY_STORE_URL, APP_STORE_URL } from "@/lib/site";
 import Section from "@/components/Section";
 import FAQ from "@/components/FAQ";
@@ -24,7 +24,6 @@ const faqs = [
 export default function AboutPage() {
   return (
     <>
-      <JsonLd data={faqPageSchema(faqs)} />
       <Section
         eyebrow="About"
         title="About WakeLeap and Dialed Labs Inc."
@@ -34,7 +33,7 @@ export default function AboutPage() {
           <p>
             WakeLeap is a mobile alarm clock application developed by Dialed Labs
             Inc. Dialed Labs Inc. is the product owner and developer of WakeLeap,
-            available on Android through Google Play with an iOS version planned.
+            available on Android through Google Play; the WakeLeap iOS version is planned (iOS 15+).
           </p>
           <p>
             The idea behind WakeLeap is simple. Most alarm clocks stop with one tap.

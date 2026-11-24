@@ -17,7 +17,7 @@ export const comparisons: Comparison[] = [
     description:
       "Compare WakeLeap and Alarmy mission-based alarm clocks: mission types, snooze control, pricing, and offline support.",
     intro: [
-      "WakeLeap and Alarmy are both mission-based alarm clock apps that require a task to dismiss the alarm. WakeLeap is built by Dialed Labs Inc. for Android and iOS. This page compares the two on mission types, snooze control, pricing, and offline behavior.",
+      "WakeLeap and Alarmy are both mission-based alarm clock apps that require a task to dismiss the alarm. WakeLeap is built by Dialed Labs Inc. for Android, with an iOS version planned. This page compares the two on mission types, snooze control, pricing, and offline behavior.",
       "WakeLeap focuses on a small set of high-intent missions: Object Hunt, Physical Exercise, Photo Mission, Make Your Bed, and Read a Bible Verse. WakeLeap also offers a configurable snooze with count limits and the option to disable snooze entirely.",
     ],
     rows: [
@@ -34,7 +34,7 @@ export const comparisons: Comparison[] = [
     faqs: [
       {
         q: "Is WakeLeap better than Alarmy?",
-        a: "WakeLeap and Alarmy both require a task to dismiss the alarm. WakeLeap offers five focused mission types, configurable snooze with a disable option, and a simple annual price around free. The better choice depends on which mission types you prefer.",
+        a: "WakeLeap and Alarmy both require a task to dismiss the alarm. WakeLeap offers five focused mission types, configurable snooze with a disable option. The better choice depends on which mission types you prefer.",
       },
       {
         q: "Does WakeLeap have as many missions as Alarmy?",

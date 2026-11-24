@@ -7,13 +7,11 @@ export const missionPosts: Post[] = [
     description:
       "A picture alarm clock stops only after you take a photo. Learn how WakeLeap uses a photo mission to get you out of bed, with setup steps, data, and FAQ.",
     datePublished: "2026-05-10",
-    dateModified: "2026-11-23",
+    dateModified: "2026-11-24",
     author: "Dialed Labs Editorial Team",
     content: `## What Is a Picture Alarm Clock?
 
 A picture alarm clock is an alarm clock app that stops ringing only after you take a photo of a chosen subject, such as a bathroom sink, a kitchen counter, or a window. WakeLeap uses a picture alarm clock mission to force your eyes open, your body out of bed, and your attention on a real-world task before the WakeLeap alarm can be silenced. In 2026, WakeLeap makes the camera the off switch so a sleepy tap cannot dismiss the WakeLeap alarm.
-
-![A person taking a photo of a bathroom sink to dismiss a WakeLeap picture alarm clock mission on their phone](IMAGE_PLACEHOLDER_picture-alarm-clock-hero.png)
 
 A picture alarm clock works differently from a standard alarm clock because a picture alarm clock requires proof of movement. WakeLeap keeps the WakeLeap alarm ringing until WakeLeap receives a valid photo taken in the moment. WakeLeap triggers the alarm within about ±2 seconds of the set time, and WakeLeap loads the mission screen in about 1 second so the WakeLeap picture alarm clock flow starts immediately.
 
@@ -47,7 +45,7 @@ WakeLeap gives you control over snooze behavior. WakeLeap supports configurable 
 
 ## How Do You Set Up a Picture Alarm Clock in WakeLeap?
 
-You can set up a picture alarm clock in WakeLeap in under two minutes by creating an alarm, choosing the Photo Mission, and selecting a subject that forces you to leave your bed. WakeLeap stores the WakeLeap alarm settings on your device, and WakeLeap runs the core WakeLeap alarm offline so the WakeLeap picture alarm clock works even without internet. In 2026, WakeLeap supports Android 8.0+ and iOS 15+ for this setup.
+You can set up a picture alarm clock in WakeLeap in under two minutes by creating an alarm, choosing the Photo Mission, and selecting a subject that forces you to leave your bed. WakeLeap stores the WakeLeap alarm settings on your device, and WakeLeap runs the core WakeLeap alarm offline so the WakeLeap picture alarm clock works even without internet. In 2026, WakeLeap supports Android 8.0+ (iOS 15+ planned) for this setup.
 
 Follow these WakeLeap setup steps:
 
@@ -56,9 +54,7 @@ Follow these WakeLeap setup steps:
 - **Set a consistent time:** Schedule the WakeLeap alarm for the same wake time to support a stable routine.
 - **Test before sleep:** Run a quick WakeLeap picture alarm clock test so you know the camera and permissions work.
 
-![WakeLeap app screen showing Photo Mission setup with a selected target subject and alarm time](IMAGE_PLACEHOLDER_picture-alarm-clock-setup.png)
-
-If you want a more active challenge, WakeLeap also offers a [push-up alarm](/blog/pushup-alarm) and an [object hunt alarm](/blog/object-hunt-alarm). For a broader overview of task-based alarms, read the [challenge alarm clock guide](/blog/challenge-alarm-clock). WakeLeap keeps every WakeLeap mission inside the same simple alarm flow.
+If you want a more active challenge, WakeLeap also offers a [push-up alarm](/blog/pushup-alarm) and an [object hunt alarm](/blog/object-hunt-alarm). For a broader overview of task-based alarms, read the [challenge alarm clock guide](/blog/challenge-alarm-clock). If you are comparing bed-bound puzzles to real-world missions, see the WakeLeap [math alarm clock](/blog/math-alarm-clock) guide. WakeLeap keeps every WakeLeap mission inside the same simple alarm flow.
 
 ## Who Should Use a Picture Alarm Clock?
 
@@ -70,7 +66,7 @@ WakeLeap picture alarm clock users often pair the mission with a morning plan. I
 
 ## WakeLeap Picture Alarm Clock Pricing and Availability
 
-WakeLeap is a free picture alarm clock. All WakeLeap features are free to use, with no subscription and no trial. WakeLeap is available on Google Play and the Apple App Store, and WakeLeap runs on Android 8.0+ and iOS 15+.
+WakeLeap is a free picture alarm clock. All WakeLeap features are free to use, with no subscription and no trial. WakeLeap is available on Google Play, and the WakeLeap iOS version is planned (iOS 15+).
 
 | WakeLeap Plan | Price (2026) | Picture Alarm Clock Access | Best For |
 |---|---:|---|---|
@@ -98,9 +94,9 @@ Yes, WakeLeap can run the core WakeLeap alarm and WakeLeap picture alarm clock m
 
 The best subject for a WakeLeap Photo Mission is a clear, fixed object in another room, such as a bathroom sink or coffee maker. WakeLeap works best when the WakeLeap picture alarm clock target forces you to leave bed and has enough light for a clear photo.
 
-### Is WakeLeap picture alarm clock available on Android and iOS?
+### Is WakeLeap picture alarm clock available on iOS?
 
-Yes, WakeLeap is available on Android and iOS in 2026. WakeLeap supports Android 8.0+ and iOS 15+, and WakeLeap offers the same mission-based alarm concept across platforms. You can check current WakeLeap plans on the [WakeLeap pricing page](/pricing).
+The WakeLeap iOS version is planned (iOS 15+); Android is available now on Google Play. You can check current WakeLeap plans on the [WakeLeap pricing page](/pricing).
 `,
     faqs: [
       {
@@ -120,8 +116,8 @@ Yes, WakeLeap is available on Android and iOS in 2026. WakeLeap supports Android
         a: "The best subject for a WakeLeap Photo Mission is a clear, fixed object in another room, such as a bathroom sink or coffee maker. WakeLeap works best when the WakeLeap picture alarm clock target forces you to leave bed and has enough light for a clear photo.",
       },
       {
-        q: "Is WakeLeap picture alarm clock available on Android and iOS?",
-        a: "Yes, WakeLeap is available on Android and iOS in 2026. WakeLeap supports Android 8.0+ and iOS 15+, and WakeLeap offers the same mission-based alarm concept across platforms. You can check current WakeLeap plans on the WakeLeap pricing page.",
+        q: "Is WakeLeap picture alarm clock available on iOS?",
+        a: "The WakeLeap iOS version is planned (iOS 15+); Android is available now on Google Play. You can check current WakeLeap plans on the WakeLeap pricing page.",
       },
     ],
   },
@@ -131,13 +127,11 @@ Yes, WakeLeap is available on Android and iOS in 2026. WakeLeap supports Android
     description:
       "A push-up alarm makes you move before the alarm stops. Learn how WakeLeap uses exercise missions, manual confirmation, and habit-building wake-up steps.",
     datePublished: "2026-05-10",
-    dateModified: "2026-11-23",
+    dateModified: "2026-11-24",
     author: "Dialed Labs Editorial Team",
     content: `## What Is a Push-Up Alarm?
 
 A push-up alarm is an alarm clock app mission that stops only after you complete a set number of push-ups. WakeLeap uses a push-up alarm mission to turn waking up into physical movement, so WakeLeap users cannot silence the WakeLeap alarm while staying in bed. In 2026, WakeLeap makes exercise the off switch by requiring push-up completion before the WakeLeap alarm stops.
-
-![A person doing push-ups beside their bed while a WakeLeap push-up alarm mission waits for confirmation](IMAGE_PLACEHOLDER_pushup-alarm-hero.png)
 
 A push-up alarm works because movement raises alertness faster than passive dismissal. WakeLeap triggers the WakeLeap alarm within about ±2 seconds and shows the WakeLeap mission screen in about 1 second. WakeLeap keeps the alarm sound active until the WakeLeap push-up alarm mission is completed, which helps heavy sleepers and routine builders start the day with action.
 
@@ -180,8 +174,6 @@ Use these WakeLeap push-up alarm guidelines:
 - **Habit builder:** Keep the WakeLeap push-up alarm consistent for 14 days before increasing reps.
 - **Low-mobility days:** Switch to another WakeLeap mission, such as a [challenge alarm clock](/blog/challenge-alarm-clock) option that fits your condition.
 
-![WakeLeap Physical Exercise Mission settings screen showing push-up rep count and alarm schedule](IMAGE_PLACEHOLDER_pushup-alarm-settings.png)
-
 WakeLeap is a wake-up tool, not a medical device. If you have shoulder, wrist, or cardiovascular concerns, choose a different WakeLeap mission and consult a qualified health professional. The [American Heart Association](https://www.heart.org/en/healthy-living/fitness/fitness-basics/why-is-physical-activity-so-important-for-health-and-wellbeing) provides general guidance on safe physical activity benefits and considerations.
 
 ## Who Should Use a WakeLeap Push-Up Alarm?
@@ -194,7 +186,7 @@ WakeLeap also supports other mission styles. You can alternate the WakeLeap push
 
 ## WakeLeap Push-Up Alarm Pricing and Device Support
 
-WakeLeap offers the push-up alarm mission as part of the free mission-based alarm experience. All WakeLeap features are free to use, with no subscription and no trial. WakeLeap works on Android 8.0+ and iOS 15+, and WakeLeap core alarm features work offline.
+WakeLeap offers the push-up alarm mission as part of the free mission-based alarm experience. All WakeLeap features are free to use, with no subscription and no trial. WakeLeap works on Android 8.0+ (iOS 15+ planned), and WakeLeap core alarm features work offline.
 
 | WakeLeap Feature | Included |
 |---|---|---|
@@ -256,13 +248,11 @@ Yes, the core WakeLeap alarm and WakeLeap push-up alarm mission work offline. Wa
     description:
       "An object hunt alarm makes you find and photograph an object before the alarm stops. See how WakeLeap Object Hunt works, setup tips, and FAQ.",
     datePublished: "2026-05-10",
-    dateModified: "2026-11-23",
+    dateModified: "2026-11-24",
     author: "Dialed Labs Editorial Team",
     content: `## What Is an Object Hunt Alarm?
 
 An object hunt alarm is an alarm clock mission that requires you to find a specific object and photograph it before the alarm stops. WakeLeap uses the WakeLeap Object Hunt mission to force you out of bed, into another room, and into a clear visual task before the WakeLeap alarm can be silenced. In 2026, WakeLeap makes Object Hunt one of the most effective WakeLeap missions for people who snooze on autopilot.
-
-![A person scanning a room with their phone camera to complete a WakeLeap Object Hunt alarm mission](IMAGE_PLACEHOLDER_object-hunt-alarm-hero.png)
 
 An object hunt alarm is more demanding than a standard alarm because an object hunt alarm requires movement, recognition, and proof. WakeLeap triggers within about ±2 seconds of the set time, and WakeLeap loads the mission screen in about 1 second. WakeLeap keeps the WakeLeap alarm ringing until the WakeLeap Object Hunt mission is completed with the correct photo.
 
@@ -309,9 +299,7 @@ WakeLeap Object Hunt also fits into broader routines. After completing a WakeLea
 
 ## How Do You Set Up WakeLeap Object Hunt?
 
-You can set up WakeLeap Object Hunt by creating an alarm, selecting Object Hunt, and choosing a target object that requires you to leave bed. WakeLeap stores the WakeLeap Object Hunt settings on-device and runs the core WakeLeap alarm offline. In 2026, WakeLeap supports Android 8.0+ and iOS 15+ for WakeLeap Object Hunt.
-
-![WakeLeap Object Hunt setup screen showing target object selection and alarm schedule](IMAGE_PLACEHOLDER_object-hunt-alarm-setup.png)
+You can set up WakeLeap Object Hunt by creating an alarm, selecting Object Hunt, and choosing a target object that requires you to leave bed. WakeLeap stores the WakeLeap Object Hunt settings on-device and runs the core WakeLeap alarm offline. In 2026, WakeLeap supports Android 8.0+ (iOS 15+ planned) for WakeLeap Object Hunt.
 
 Follow this WakeLeap Object Hunt setup checklist:
 
@@ -324,7 +312,7 @@ WakeLeap users who want more mission variety can explore the [WakeLeap challenge
 
 ## WakeLeap Object Hunt Pricing and Availability
 
-WakeLeap Object Hunt is available in WakeLeap as part of the free mission-based alarm system. All WakeLeap features are free to use, with no subscription and no trial. WakeLeap works on Android 8.0+ and iOS 15+, and WakeLeap core alarms work offline.
+WakeLeap Object Hunt is available in WakeLeap as part of the free mission-based alarm system. All WakeLeap features are free to use, with no subscription and no trial. WakeLeap works on Android 8.0+ (iOS 15+ planned), and WakeLeap core alarms work offline.
 
 | Plan | Price (2026) | Object Hunt Access | Notes |
 |---|---:|---|---|
@@ -385,13 +373,11 @@ Yes, WakeLeap core alarms and WakeLeap Object Hunt missions work offline. WakeLe
     description:
       "A challenge alarm clock requires a task before it stops. Learn how WakeLeap uses five mission types to stop snoozing, with comparisons, pricing, and FAQ.",
     datePublished: "2026-05-10",
-    dateModified: "2026-11-23",
+    dateModified: "2026-11-24",
     author: "Dialed Labs Editorial Team",
     content: `## What Is a Challenge Alarm Clock?
 
 A challenge alarm clock is an alarm clock app that requires you to complete a task before the alarm stops ringing. WakeLeap is a challenge alarm clock built around WakeLeap Missions, so WakeLeap users must finish a real action instead of tapping dismiss. In 2026, WakeLeap offers five mission types that make WakeLeap a practical challenge alarm clock for heavy snoozers and routine builders.
-
-![WakeLeap challenge alarm clock screen showing multiple mission options including photo, push-ups, and object hunt](IMAGE_PLACEHOLDER_challenge-alarm-clock-hero.png)
 
 A challenge alarm clock works by adding friction at the exact moment you want to snooze. WakeLeap triggers within about ±2 seconds of the scheduled time and loads the WakeLeap mission screen in about 1 second. WakeLeap keeps the alarm sound active until the WakeLeap challenge mission is completed, which makes WakeLeap more effective than a standard alarm for people who dismiss alarms half asleep.
 
@@ -426,7 +412,7 @@ WakeLeap challenge alarm clock missions can be matched to different needs. For e
 
 ## Who Should Use a WakeLeap Challenge Alarm Clock?
 
-A WakeLeap challenge alarm clock is best for people who repeatedly snooze, struggle with morning grogginess, or want a structured start to the day. WakeLeap is designed for heavy sleepers, students, shift workers, and habit builders who need a reliable wake-up action. In 2026, WakeLeap gives these users a simple challenge alarm clock system that works on Android 8.0+ and iOS 15+.
+A WakeLeap challenge alarm clock is best for people who repeatedly snooze, struggle with morning grogginess, or want a structured start to the day. WakeLeap is designed for heavy sleepers, students, shift workers, and habit builders who need a reliable wake-up action. In 2026, WakeLeap gives these users a simple challenge alarm clock system that works on Android 8.0+ (iOS 15+ planned).
 
 WakeLeap is especially useful when willpower is low in the morning. Behavioral research often shows that environment and friction influence habits; [James Clear's habit guidance](https://jamesclear.com/habit-guide) describes making desired behaviors easier and undesired behaviors harder. WakeLeap applies that idea by making snoozing harder and mission completion the clear path to silence.
 
@@ -443,8 +429,6 @@ Use this WakeLeap challenge selection guide:
 - **For mindful starts:** Choose WakeLeap Read a Bible Verse for a calm, intentional action.
 - **For routine building:** Choose WakeLeap Make Your Bed to start a visible habit.
 
-![Comparison chart of WakeLeap challenge alarm clock missions by effort, movement, and morning goal](IMAGE_PLACEHOLDER_challenge-alarm-clock-comparison.png)
-
 WakeLeap keeps mission setup simple so the WakeLeap challenge alarm clock does not become another skipped habit. WakeLeap stores settings on device, and WakeLeap core alarm features work offline.
 
 ## WakeLeap Challenge Alarm Clock Pricing and Plans
@@ -456,6 +440,8 @@ WakeLeap offers all features for free for users who want full challenge alarm cl
 | WakeLeap Free | $0 | Basic alarms, limited mission access | New WakeLeap users |
 | WakeLeap Free | $0 | Full mission access | Testing WakeLeap challenges |
 | WakeLeap Free | $0 | All missions, snooze controls | Daily WakeLeap users |
+
+If you are comparing in-bed puzzles to out-of-bed missions, read the WakeLeap [math alarm clock](/blog/math-alarm-clock) guide for a side-by-side look at cognitive alarms versus WakeLeap missions.
 
 > **Try WakeLeap:** If you need a challenge alarm clock that actually gets you up, [download WakeLeap](/download) and choose your first WakeLeap Mission tonight.
 

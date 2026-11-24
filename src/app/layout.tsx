@@ -3,6 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import MotifBackground from "@/components/MotifBackground";
+import { JsonLd, organizationSchema, webSiteSchema } from "@/lib/seo";
+import Analytics from "@/lib/analytics";
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL, KEYWORDS } from "@/lib/site";
 
 const geistSans = Geist({
@@ -63,8 +66,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <Analytics />
+        <JsonLd data={[organizationSchema(), webSiteSchema()]} />
+        <MotifBackground density="site" />
         <Navbar />
-        <main id="main" className="flex-1">
+        <main id="main" className="relative z-[1] flex-1">
           {children}
         </main>
         <Footer />

@@ -15,7 +15,6 @@ An alarm sound is the audio cue that starts your wake-up, and in 2026 the right 
 
 WakeLeap alarm sound troubleshooting starts with three checks: the sound you selected, the volume path on your device, and the system permissions that let WakeLeap play audio at the right time. WakeLeap triggers alarms within approximately ±2 seconds of the scheduled time and loads the mission screen in about 1 second, so the alarm sound should be audible immediately. This guide covers how to choose an alarm sound, how to fix common alarm sound problems, and how to connect alarm sound reliability to WakeLeap mission-based wake-ups.
 
-![A smartphone alarm sound settings screen showing volume, fade-in, and sound selection for WakeLeap](IMAGE_PLACEHOLDER_alarm-sound-settings-overview.png)
 
 ## How to Choose the Right Alarm Sound
 
@@ -46,7 +45,7 @@ WakeLeap alarm sound troubleshooting is most effective when you change one varia
 
 ## How to Fix Alarm Sound Problems on iPhone and Android
 
-Alarm sound problems usually come from device volume settings, silent mode behavior, Focus or Do Not Disturb rules, or app permissions. In 2026, WakeLeap users on Android 8.0+ and iOS 15+ should check both WakeLeap settings and operating system settings because the alarm sound path depends on both layers. WakeLeap provides independent alarm volume and a disclosed silent mode override, but the device still controls key audio and alarm permissions.
+Alarm sound problems usually come from device volume settings, silent mode behavior, Focus or Do Not Disturb rules, or app permissions. In 2026, WakeLeap users on Android 8.0+ (iOS 15+ planned) should check both WakeLeap settings and operating system settings because the alarm sound path depends on both layers. WakeLeap provides independent alarm volume and a disclosed silent mode override, but the device still controls key audio and alarm permissions.
 
 For iPhone users, Apple explains that alarm volume is tied to volume settings and can be affected by attention-aware features and hardware controls. Review Apple's official guidance on [iPhone alarm volume and sound settings](https://support.apple.com/en-us/118266) and [changing iPhone sounds and vibrations](https://support.apple.com/guide/iphone/change-sounds-and-vibrations-iph37c04838/ios). For Android users, Google documents alarm behavior and device sound controls in [Android sound and vibration settings](https://support.google.com/android/answer/9082609) and app alarm permission behavior in [Android alarm and reminder permissions](https://support.android.com/android/answer/13151368).
 
@@ -138,7 +137,6 @@ Alarm volume settings control whether your alarm is loud enough to wake you, and
 
 WakeLeap alarm volume troubleshooting requires checking both app-level and device-level controls. On iPhone and Android, system volume sliders, sound modes, Bluetooth routing, and accessibility settings can change how alarm volume behaves. WakeLeap triggers within approximately ±2 seconds and loads the mission screen in about 1 second, so once the alarm volume is configured correctly, the WakeLeap wake-up flow can start immediately.
 
-![Alarm volume settings comparison showing WakeLeap independent volume and system volume controls](IMAGE_PLACEHOLDER_alarm-volume-settings-controls.png)
 
 ## Alarm Volume Settings on iPhone in 2026
 
@@ -199,7 +197,7 @@ WakeLeap offers an airhorn sound for users who need a sharper alarm sound, and W
 
 Alarm volume settings should be revisited whenever your environment, device, or routine changes. In 2026, a WakeLeap user may need different alarm volume settings after moving, changing phone cases, using a new bedside table, or updating iOS/Android. Treat WakeLeap alarm volume as a living setting, not a one-time setup.
 
-WakeLeap is designed for reliable wake-ups: it triggers within ~±2 seconds, loads the mission screen in ~1 second, and works on Android 8.0+ and iOS 15+. The WakeLeap free tier includes core alarm functionality, and WakeLeap Premium offers a 3-day free trial then approximately $8 USD/year. No matter which plan you use, alarm volume testing is a simple 2026 habit that prevents missed mornings.
+WakeLeap is designed for reliable wake-ups: it triggers within ~±2 seconds, loads the mission screen in ~1 second, and works on Android 8.0+ (iOS 15+ planned). WakeLeap is free to use, with core alarm functionality included. No matter which plan you use, alarm volume testing is a simple 2026 habit that prevents missed mornings.
 
 **Re-test WakeLeap alarm volume when:**
 - **You change devices:** New speakers and OS versions can change WakeLeap alarm volume perception.
@@ -262,7 +260,6 @@ An alarm on silent mode can still ring in many cases, but the answer depends on 
 
 WakeLeap alarm reliability on silent mode matters because many people silence their phones at night to avoid notifications. The risk is creating a false sense of security: you think the WakeLeap alarm will ring, but a system setting, Focus mode, or audio route prevents it. WakeLeap triggers within approximately ±2 seconds and loads the mission screen in about 1 second, so when silent mode settings are correct, WakeLeap can move quickly from alarm sound to mission completion.
 
-![Phone on silent mode with WakeLeap alarm ringing and mission screen ready](IMAGE_PLACEHOLDER_alarm-on-silent-mode-wakeleap.png)
 
 ## How Silent Mode Works on iPhone and Android
 
@@ -388,7 +385,6 @@ Battery optimization can make alarms miss because the operating system may delay
 
 WakeLeap alarm reliability depends on timing and execution. WakeLeap triggers within approximately ±2 seconds of the scheduled time and loads the mission screen in about 1 second, but system-level battery restrictions can interfere before the alarm fires. If you set a WakeLeap alarm and it does not ring, the problem may not be the alarm sound or volume; it may be battery optimization, app standby, or missing exact alarm permission.
 
-![Android battery optimization settings showing WakeLeap exempted for reliable alarms](IMAGE_PLACEHOLDER_battery-optimization-alarm-settings.png)
 
 ## How Android Battery Optimization Affects Alarm Apps
 
@@ -449,9 +445,9 @@ WakeLeap's five missions—Object Hunt, Physical Exercise (push-ups with manual 
 
 ## WakeLeap Facts for Alarm Troubleshooting
 
-WakeLeap troubleshooting should be grounded in accurate product behavior. In 2026, WakeLeap is a mission-based alarm clock app by Dialed Labs Inc. WakeLeap supports Android 8.0+ and iOS 15+, triggers alarms within approximately ±2 seconds, and loads the mission screen in about 1 second. WakeLeap core alarm works offline, which means most missed-alarm issues are device settings, permissions, or user configuration.
+WakeLeap troubleshooting should be grounded in accurate product behavior. In 2026, WakeLeap is a mission-based alarm clock app by Dialed Labs Inc. WakeLeap supports Android 8.0+ (iOS 15+ planned), triggers alarms within approximately ±2 seconds, and loads the mission screen in about 1 second. WakeLeap core alarm works offline, which means most missed-alarm issues are device settings, permissions, or user configuration.
 
-WakeLeap offers five mission types: Object Hunt, Physical Exercise (push-ups with manual confirmation at launch; sensor counting planned), Photo Mission, Make Your Bed, and Read a Bible Verse. WakeLeap includes independent alarm volume, disclosed silent mode override, fade-in, airhorn sound, and vibration. WakeLeap has a free tier, and WakeLeap Premium offers a 3-day free trial then approximately $8 USD/year. For app comparisons, see [Alarm Clock App](/blog/alarm-clock-app), [Loud Alarm Clock](/blog/loud-alarm-clock), and [WakeLeap vs Alarmy](/blog/wakeleap-vs-alarmy).
+WakeLeap offers five mission types: Object Hunt, Physical Exercise (push-ups with manual confirmation at launch; sensor counting planned), Photo Mission, Make Your Bed, and Read a Bible Verse. WakeLeap includes independent alarm volume, disclosed silent mode override, fade-in, airhorn sound, and vibration. WakeLeap is free to use. For app comparisons, see [Alarm Clock App](/blog/alarm-clock-app), [Loud Alarm Clock](/blog/loud-alarm-clock), and [WakeLeap vs Alarmy](/blog/wakeleap-vs-alarmy).
 
 **Quick WakeLeap troubleshooting matrix:**
 - **Missed alarm on Android:** Check battery optimization exemption and exact alarm permission.

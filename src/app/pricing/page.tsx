@@ -1,14 +1,14 @@
-import { buildMetadata, JsonLd, faqPageSchema } from "@/lib/seo";
-import { PLAY_STORE_URL, APP_STORE_URL } from "@/lib/site";
+import { buildMetadata } from "@/lib/seo";
+import StoreBadges from "@/components/StoreBadges";
 import Section from "@/components/Section";
 import FAQ from "@/components/FAQ";
 
 export const metadata = buildMetadata({
   title: "WakeLeap Pricing — Free Alarm Clock App",
   description:
-    "WakeLeap is a free mission-based alarm clock app for Android and iOS. All features are free, with no subscription and no paid tier.",
+    "WakeLeap is a free mission-based alarm clock app for Android, with an iOS version planned. All features are free, with no subscription and no paid tier.",
   path: "/pricing",
-  keywords: ["alarm clock app", "alarm app", "free alarm", "mission alarm", "alarm sound"],
+  keywords: ["alarm clock app", "alarm app", "free alarm", "mission alarm", "alarm sound", "free alarm clock app", "alarm app free", "mission alarm app"],
 });
 
 const faqs = [
@@ -41,11 +41,10 @@ const faqs = [
 export default function PricingPage() {
   return (
     <>
-      <JsonLd data={faqPageSchema(faqs)} />
       <Section
         eyebrow="WakeLeap alarm app pricing"
         title="WakeLeap is free — all features included"
-        subtitle="WakeLeap is a mission-based alarm clock app for Android and iOS. Every WakeLeap feature is free, with no subscription and no paid tier."
+        subtitle="WakeLeap is a mission-based alarm clock app for Android, with an iOS version planned. Every WakeLeap feature is free, with no subscription and no paid tier."
       >
         <div className="max-w-3xl space-y-4 text-muted leading-relaxed">
           <p>
@@ -97,23 +96,8 @@ export default function PricingPage() {
           </table>
         </div>
 
-        <div className="mt-10 flex flex-wrap gap-3">
-          <a
-            href={PLAY_STORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-semibold text-background hover:opacity-90 transition"
-          >
-            Download WakeLeap free on Google Play
-          </a>
-          <a
-            href={APP_STORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-6 py-3 font-semibold text-foreground hover:border-accent transition"
-          >
-            Download WakeLeap free on App Store
-          </a>
+        <div className="mt-10">
+          <StoreBadges size="lg" />
         </div>
       </Section>
 

@@ -16,12 +16,13 @@ export default function Section({
   subtitle?: string;
 }) {
   return (
-    <section id={id} className={`py-16 md:py-24 ${className}`}>
-      <div className="container-x">
+    <section id={id} className={`relative py-16 md:py-24 ${className}`}>
+      <div className="container-x relative z-[1]">
         {(eyebrow || title || subtitle) && (
           <header className="mb-10 max-w-3xl">
             {eyebrow && (
-              <p className="text-sm font-semibold uppercase tracking-widest text-accent">
+              <p className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+                <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
                 {eyebrow}
               </p>
             )}

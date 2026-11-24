@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { buildMetadata, JsonLd, faqPageSchema } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo";
 import { comparisons, getComparison } from "@/lib/compare";
 import Section from "@/components/Section";
 import FAQ from "@/components/FAQ";
@@ -37,7 +37,6 @@ export default async function ComparePage({
 
   return (
     <>
-      <JsonLd data={faqPageSchema(c.faqs)} />
       <Section eyebrow="Comparison" title={c.h1} subtitle={c.description}>
         <div className="max-w-3xl space-y-4 text-muted leading-relaxed">
           {c.intro.map((p, i) => (

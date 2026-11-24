@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { buildMetadata, JsonLd, faqPageSchema } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo";
 import { features, getFeature } from "@/lib/features";
 import Section from "@/components/Section";
 import FAQ from "@/components/FAQ";
@@ -23,6 +23,13 @@ export async function generateMetadata({
     title: `${f.title} — WakeLeap`,
     description: f.description,
     path: `/features/${f.slug}`,
+    keywords: [
+      "mission alarm app",
+      "alarm clock app",
+      "alarm app for heavy sleepers",
+      "wake up",
+      "snooze blocker",
+    ],
   });
 }
 
@@ -37,7 +44,6 @@ export default async function FeaturePage({
 
   return (
     <>
-      <JsonLd data={faqPageSchema(f.faqs)} />
       <Section eyebrow="Feature" title={f.h1} subtitle={f.description}>
         <div className="max-w-3xl space-y-4 text-muted leading-relaxed">
           {f.body.map((p, i) => (

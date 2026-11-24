@@ -1,15 +1,26 @@
 import Link from "next/link";
-import { buildMetadata, JsonLd, softwareApplicationSchema, faqPageSchema } from "@/lib/seo";
-import { PLAY_STORE_URL, APP_STORE_URL, TRIAL_DAYS, ANNUAL_PRICE_LABEL } from "@/lib/site";
+import type { ReactNode } from "react";
+import { buildMetadata, JsonLd, softwareApplicationSchema } from "@/lib/seo";
+import StoreBadges from "@/components/StoreBadges";
+import HeroVisual from "@/components/HeroVisual";
+import MotifBackground from "@/components/MotifBackground";
 import Section from "@/components/Section";
 import FAQ from "@/components/FAQ";
 import ScreenshotsCarousel from "@/components/ScreenshotsCarousel";
+import {
+  IconHunt,
+  IconExercise,
+  IconPhoto,
+  IconBed,
+  IconBook,
+  IconMore,
+} from "@/components/MissionIcons";
 import { phoneScreenshots, tabletScreenshots } from "@/lib/screenshots";
 
 export const metadata = buildMetadata({
-  title: "WakeLeap — Mission Alarm Clock App for Heavy Sleepers (Android & iOS)",
+  title: "WakeLeap — Mission Alarm Clock App for Heavy Sleepers (Android — iOS Planned)",
   description:
-    "WakeLeap is a mission alarm clock app for Android and iOS. Wake up on the first alarm: complete a Mission such as an Object Hunt, push-ups, a photo, making your bed, or reading a Bible verse before the alarm stops. WakeLeap is free to use, with all features included. For heavy sleepers and morning routines.",
+    "WakeLeap is a mission alarm clock app for Android, with an iOS version planned. Wake up on the first alarm: complete a Mission such as an Object Hunt, push-ups, a photo, making your bed, or reading a Bible verse before the alarm stops. WakeLeap is free to use, with all features included. For heavy sleepers and morning routines.",
   path: "/",
   keywords: [
     "mission alarm",
@@ -25,13 +36,18 @@ export const metadata = buildMetadata({
     "morning habits",
     "motivational alarm",
     "daily routine",
+    "alarm app for heavy sleepers",
+    "snooze blocker app",
+    "no snooze alarm",
+    "best alarm clock app",
+    "wake up on first alarm",
   ],
 });
 
 const homeFaqs = [
   {
     q: "What is WakeLeap and how does the mission alarm work?",
-    a: "WakeLeap is a mission-based alarm clock app built by Dialed Labs Inc. for Android and iOS. Instead of tapping a button to dismiss an alarm, you must complete a Mission such as an Object Hunt, push-ups, a photo, making your bed, or reading a Bible verse before the alarm stops.",
+    a: "WakeLeap is a mission-based alarm clock app built by Dialed Labs Inc. for Android, with an iOS version planned. Instead of tapping a button to dismiss an alarm, you must complete a Mission such as an Object Hunt, push-ups, a photo, making your bed, or reading a Bible verse before the alarm stops.",
   },
   {
     q: "How much does WakeLeap cost?",
@@ -43,11 +59,11 @@ const homeFaqs = [
   },
   {
     q: "Which devices and operating systems support WakeLeap?",
-    a: "WakeLeap supports Android 8.0 (API 26) and above. An iOS version supporting iOS 15 and above is planned. WakeLeap runs on phones and small tablets from 4.7 to 7 inches in both portrait and landscape on tablets.",
+    a: "WakeLeap supports Android 8.0 (API 26) and above; the WakeLeap iOS version is planned (iOS 15+). WakeLeap runs on phones and small tablets from 4.7 to 7 inches in both portrait and landscape on tablets.",
   },
   {
     q: "How does WakeLeap compare to Alarmy and other alarm apps?",
-    a: "WakeLeap and Alarmy both require a task to dismiss the alarm. WakeLeap offers five focused mission types, configurable snooze with a disable option, a simple annual price around free, and an iOS version planned. Alarmy offers a larger mission library today.",
+    a: "WakeLeap and Alarmy both require a task to dismiss the alarm. WakeLeap offers five focused mission types, configurable snooze with a disable option, and an iOS version planned. Alarmy offers a larger mission library today.",
   },
   {
     q: "Is my data safe and private with WakeLeap?",
@@ -55,90 +71,95 @@ const homeFaqs = [
   },
 ];
 
-const missions = [
-  { title: "Object Hunt", desc: "WakeLeap asks you to find and photograph a specific object before the alarm stops.", icon: "🔍" },
-  { title: "Physical Exercise", desc: "WakeLeap requires a set number of push-ups or reps, confirmed manually, to dismiss the alarm.", icon: "💪" },
-  { title: "Photo Mission", desc: "WakeLeap makes you take a photo of a subject like the sky, your face, or your made bed.", icon: "📸" },
-  { title: "Make Your Bed", desc: "WakeLeap confirms you made your bed by photo or task confirmation before dismissing the alarm.", icon: "🛏️" },
-  { title: "Read a Bible Verse", desc: "WakeLeap presents a daily Bible verse and requires you to confirm you read it before the alarm stops.", icon: "📖" },
+const missions: { title: string; desc: string; icon: ReactNode }[] = [
+  {
+    title: "Object Hunt",
+    desc: "WakeLeap asks you to find and photograph a specific object before the alarm stops.",
+    icon: <IconHunt />,
+  },
+  {
+    title: "Physical Exercise",
+    desc: "WakeLeap requires a set number of push-ups or reps, confirmed manually, to dismiss the alarm.",
+    icon: <IconExercise />,
+  },
+  {
+    title: "Photo Mission",
+    desc: "WakeLeap makes you take a photo of a subject like the sky, your face, or your made bed.",
+    icon: <IconPhoto />,
+  },
+  {
+    title: "Make Your Bed",
+    desc: "WakeLeap confirms you made your bed by photo or task confirmation before dismissing the alarm.",
+    icon: <IconBed />,
+  },
+  {
+    title: "Read a Bible Verse",
+    desc: "WakeLeap presents a daily Bible verse and requires you to confirm you read it before the alarm stops.",
+    icon: <IconBook />,
+  },
 ];
 
 export default function Home() {
   return (
     <>
-      <JsonLd data={[softwareApplicationSchema(), faqPageSchema(homeFaqs)]} />
+      <JsonLd data={[softwareApplicationSchema()]} />
 
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-accent/20 via-background to-background" />
-        <div className="container-x py-20 md:py-28">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-widest text-accent">
-              Mission-Based Alarm Clock App
-            </p>
-            <h1 className="mt-4 text-4xl md:text-6xl font-black tracking-tight leading-[1.05]">
-              WakeLeap — Mission Alarm Clock App for Heavy Sleepers (Android &amp; iOS)
-            </h1>
-            <p className="mt-6 text-lg md:text-xl text-muted leading-relaxed">
-              WakeLeap is a mission-based alarm clock app for Android and iOS built
-              by Dialed Labs Inc. for heavy snoozers and morning-routine seekers.
-              WakeLeap requires you to complete a Mission such as an Object Hunt,
-              push-ups, a photo, making your bed, or reading a Bible verse before
-              the alarm stops, so one tap is never enough to silence it. WakeLeap
-              delivers a ±2 second alarm trigger accuracy, a 1 second Mission
-              screen render, and is free to use with all features included.
-            </p>
-            <p className="mt-4 text-lg md:text-xl text-muted leading-relaxed">
-              WakeLeap helps heavy snoozers and morning-routine seekers wake up for
-              real by replacing tap-to-dismiss with a Mission, turning the alarm
-              into a daily trigger for movement, mindfulness, and a tidy room.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href={PLAY_STORE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-semibold text-background hover:opacity-90 transition"
-              >
-                Download WakeLeap on Google Play
-              </a>
-              <a
-                href={APP_STORE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-6 py-3 font-semibold text-foreground hover:border-accent transition"
-              >
-                Download WakeLeap on App Store
-              </a>
+        <MotifBackground density="hero" />
+        <div className="container-x relative z-[1] py-16 md:py-24">
+          <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
+            <div className="max-w-2xl">
+              <p className="inline-flex items-center gap-2 rounded-full border border-accent/25 bg-accent/10 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+                Mission-Based Alarm Clock App
+              </p>
+              <h1 className="mt-5 text-4xl md:text-5xl lg:text-[3.35rem] font-extrabold tracking-tight leading-[1.05]">
+                WakeLeap — Mission Alarm Clock App for Heavy Sleepers (Android &amp; iOS)
+              </h1>
+              <p className="mt-6 text-lg md:text-xl text-muted leading-relaxed">
+                WakeLeap is a mission-based alarm clock app for Android, with an
+                iOS version planned, built by Dialed Labs Inc. for heavy snoozers
+                and morning-routine seekers. WakeLeap requires you to complete a
+                Mission such as an Object Hunt, push-ups, a photo, making your
+                bed, or reading a Bible verse before the alarm stops, so one tap
+                is never enough to silence it.
+              </p>
+              <p className="mt-4 flex flex-wrap gap-x-3 gap-y-1 text-sm md:text-base text-muted">
+                <span className="text-foreground/90">±2s accuracy</span>
+                <span className="text-border" aria-hidden="true">·</span>
+                <span className="text-foreground/90">1s mission load</span>
+                <span className="text-border" aria-hidden="true">·</span>
+                <span className="text-foreground/90">Free · all features</span>
+              </p>
+              <div className="mt-8">
+                <StoreBadges size="lg" />
+              </div>
               <Link
                 href="/features"
-                className="inline-flex items-center gap-2 rounded-full px-6 py-3 font-semibold text-muted hover:text-foreground transition"
+                className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-muted hover:text-accent transition"
               >
                 Explore WakeLeap features →
               </Link>
             </div>
-            <p className="mt-4 text-sm text-muted">
-              WakeLeap is free to download. Try all WakeLeap free features free for{" "}
-              {TRIAL_DAYS} days, no credit card required to start.
-            </p>
+            <HeroVisual />
           </div>
         </div>
       </section>
 
       {/* Numbers */}
-      <Section className="border-y border-border bg-surface/40">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <Section className="border-y border-border/80">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
           {[
             { k: "5+", v: "Mission types in WakeLeap at launch" },
             { k: "Free", v: "All WakeLeap features" },
             { k: "±2s", v: "WakeLeap alarm trigger accuracy" },
             { k: "100%", v: "WakeLeap core alarm works offline" },
           ].map((s) => (
-            <div key={s.v} className="text-center">
-              <div className="text-3xl md:text-4xl font-black text-accent">
+            <div key={s.v} className="relative overflow-hidden rounded-2xl border border-border bg-surface/80 px-3 py-5 text-center">
+              <div className="relative text-3xl md:text-4xl font-extrabold text-accent">
                 {s.k}
               </div>
-              <div className="mt-1 text-sm text-muted">{s.v}</div>
+              <div className="relative mt-1.5 text-sm text-muted">{s.v}</div>
             </div>
           ))}
         </div>
@@ -196,7 +217,7 @@ export default function Home() {
               configurable snooze.
             </p>
           </div>
-          <div className="rounded-2xl border border-border bg-surface p-6">
+          <div className="rounded-2xl border border-border bg-gradient-to-br from-surface-2/90 to-surface/90 p-6 backdrop-blur-sm">
             <h3 className="font-semibold text-foreground">
               WakeLeap vs a standard alarm clock
             </h3>
@@ -235,23 +256,21 @@ export default function Home() {
         title="Five mission types in the WakeLeap alarm clock app"
         subtitle="Each alarm in WakeLeap has exactly one Mission. Pick the WakeLeap Mission that fits your morning."
       >
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {missions.map((m) => (
-            <div
-              key={m.title}
-              className="rounded-2xl border border-border bg-surface p-6 hover:border-accent/60 transition"
-            >
-              <div className="text-3xl" aria-hidden="true">
-                {m.icon}
-              </div>
-              <h3 className="mt-3 text-lg font-semibold text-foreground">
+            <div key={m.title} className="rounded-2xl border border-border bg-gradient-to-br from-surface-2/90 to-surface/90 p-6 backdrop-blur-sm transition hover:-translate-y-0.5 hover:border-accent/45">
+              <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-accent/25 bg-accent/15 text-accent">{m.icon}</div>
+              <h3 className="mt-4 text-lg font-semibold text-foreground">
                 {m.title}
               </h3>
               <p className="mt-2 text-sm text-muted leading-relaxed">{m.desc}</p>
             </div>
           ))}
-          <div className="rounded-2xl border border-dashed border-border bg-surface/40 p-6 flex flex-col justify-center">
-            <h3 className="text-lg font-semibold text-foreground">
+          <div className="flex flex-col justify-center rounded-2xl border border-dashed border-border bg-surface/50 p-6">
+            <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-accent/25 bg-accent/15 text-accent">
+              <IconMore />
+            </div>
+            <h3 className="mt-4 text-lg font-semibold text-foreground">
               More WakeLeap missions coming
             </h3>
             <p className="mt-2 text-sm text-muted leading-relaxed">
@@ -276,7 +295,7 @@ export default function Home() {
         title="Set a WakeLeap alarm, pick a WakeLeap Mission, wake up for real"
         subtitle="WakeLeap walks you through creating your first WakeLeap alarm and WakeLeap Mission during onboarding."
       >
-        <ol className="grid md:grid-cols-3 gap-6">
+        <ol className="grid md:grid-cols-3 gap-5 list-none p-0 m-0">
           {[
             {
               n: "1",
@@ -294,11 +313,8 @@ export default function Home() {
               d: "When the WakeLeap alarm triggers, WakeLeap plays the sound and shows the WakeLeap Mission screen. Finish the WakeLeap Mission to silence the alarm and grow your WakeLeap streak.",
             },
           ].map((s) => (
-            <li
-              key={s.n}
-              className="rounded-2xl border border-border bg-surface p-6"
-            >
-              <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-accent text-background font-black">
+            <li key={s.n} className="list-none rounded-2xl border border-border bg-gradient-to-br from-surface-2/90 to-surface/90 p-6 backdrop-blur-sm transition hover:-translate-y-0.5 hover:border-accent/45">
+              <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-accent text-background font-extrabold">
                 {s.n}
               </div>
               <h3 className="mt-4 text-lg font-semibold text-foreground">
@@ -316,44 +332,42 @@ export default function Home() {
         title="WakeLeap pricing: free alarm app to start, free to go further"
         subtitle="WakeLeap is free to use, with all features included. Download and start using WakeLeap today."
       >
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
-          <div className="rounded-2xl border border-border bg-surface p-6">
-            <h3 className="text-lg font-semibold text-foreground">WakeLeap Free</h3>
-            <p className="mt-1 text-sm text-muted">Basic WakeLeap alarm clock features</p>
-            <p className="mt-4 text-3xl font-black">$0</p>
-            <ul className="mt-4 space-y-2 text-sm text-muted">
-              <li>• Create and manage WakeLeap alarms</li>
-              <li>• Basic WakeLeap mission types</li>
-              <li>• Built-in WakeLeap alarm sounds</li>
-              <li>• WakeLeap vibration support</li>
-            </ul>
-          </div>
-          <div className="rounded-2xl border border-accent bg-surface p-6 relative">
-            <span className="absolute top-4 right-4 text-xs font-semibold text-accent">
-              Recommended
-            </span>
-            <h3 className="text-lg font-semibold text-foreground">WakeLeap Free</h3>
-            <p className="mt-1 text-sm text-muted">
-              All WakeLeap missions and advanced controls
-            </p>
-            <p className="mt-4 text-3xl font-black">
-              {ANNUAL_PRICE_LABEL}
-              <span className="text-sm font-normal text-muted"> /year</span>
-            </p>
-            <ul className="mt-4 space-y-2 text-sm text-muted">
-              <li>• All 5+ WakeLeap mission types</li>
-              <li>• Configurable WakeLeap snooze with limits</li>
-              <li>• Disable WakeLeap snooze entirely</li>
-              <li>• WakeLeap sounds and fade-in</li>
-              <li>• WakeLeap monthly plan available</li>
-            </ul>
-            <Link
-              href="/pricing"
-              className="mt-6 inline-flex items-center rounded-full bg-accent px-5 py-2 font-semibold text-background hover:opacity-90 transition"
-            >
-              See full WakeLeap pricing
-            </Link>
-          </div>
+        <div className="relative max-w-4xl overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-surface-2/90 to-surface/90 p-8 backdrop-blur-sm">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -right-8 -top-8 h-40 w-40 rounded-full bg-accent/15 blur-2xl"
+          />
+          <h3 className="text-lg font-semibold text-foreground">WakeLeap — Free</h3>
+          <p className="mt-1 text-sm text-muted">
+            All WakeLeap missions and advanced controls
+          </p>
+          <p className="mt-4 text-4xl font-extrabold text-accent">$0</p>
+          <p className="mt-2 text-sm text-muted">
+            No subscription, no trial, no paid tier.
+          </p>
+          <ul className="mt-6 grid sm:grid-cols-2 gap-2 text-sm text-muted">
+            <li className="flex items-center gap-2">
+              <span className="text-accent" aria-hidden="true">✓</span> All 5 WakeLeap mission types
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-accent" aria-hidden="true">✓</span> Configurable WakeLeap snooze with limits
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-accent" aria-hidden="true">✓</span> Disable WakeLeap snooze entirely
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-accent" aria-hidden="true">✓</span> WakeLeap sounds and fade-in
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-accent" aria-hidden="true">✓</span> Streak tracking
+            </li>
+          </ul>
+          <Link
+            href="/pricing"
+            className="mt-6 inline-flex items-center rounded-xl bg-accent px-5 py-2.5 font-semibold text-background hover:bg-accent-soft transition"
+          >
+            See full WakeLeap pricing
+          </Link>
         </div>
       </Section>
 
@@ -395,35 +409,23 @@ export default function Home() {
       </Section>
 
       {/* Final CTA */}
-      <Section className="bg-surface/40 border-y border-border">
-        <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            Ready to stop snoozing with WakeLeap?
-          </h2>
-          <p className="mt-4 text-lg text-muted">
-            Download WakeLeap and set your first WakeLeap Mission alarm tonight. Wake up
-            for real tomorrow morning with WakeLeap.
-          </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <a
-              href={PLAY_STORE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-semibold text-background hover:opacity-90 transition"
-            >
-              Get WakeLeap on Google Play
-            </a>
-            <a
-              href={APP_STORE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-6 py-3 font-semibold text-foreground hover:border-accent transition"
-            >
-              Download WakeLeap on App Store
-            </a>
+      <section className="relative overflow-hidden border-y border-border">
+        <MotifBackground density="cta" />
+        <div className="container-x relative z-[1] py-16 md:py-24">
+          <div className="mx-auto max-w-2xl rounded-2xl border border-border bg-gradient-to-br from-surface-2/90 to-surface/90 px-6 py-12 text-center backdrop-blur-sm sm:px-10">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+              Ready to stop snoozing with WakeLeap?
+            </h2>
+            <p className="mt-4 text-lg text-muted">
+              Download WakeLeap and set your first WakeLeap Mission alarm tonight.
+              Wake up for real tomorrow morning with WakeLeap.
+            </p>
+            <div className="mt-8 flex justify-center">
+              <StoreBadges size="lg" className="items-center sm:justify-center" />
+            </div>
           </div>
         </div>
-      </Section>
+      </section>
     </>
   );
 }

@@ -1,15 +1,17 @@
-import { buildMetadata, JsonLd, softwareApplicationSchema, faqPageSchema } from "@/lib/seo";
-import { PLAY_STORE_URL, APP_STORE_URL, MIN_ANDROID, MIN_IOS } from "@/lib/site";
+import { buildMetadata, JsonLd, softwareApplicationSchema } from "@/lib/seo";
+import { MIN_ANDROID, MIN_IOS } from "@/lib/site";
+import { AppStoreBadge, PlayStoreBadge } from "@/components/StoreBadges";
 import Section from "@/components/Section";
 import FAQ from "@/components/FAQ";
 import ScreenshotsCarousel from "@/components/ScreenshotsCarousel";
 import { phoneScreenshots, tabletScreenshots } from "@/lib/screenshots";
 
 export const metadata = buildMetadata({
-  title: "Download WakeLeap — Mission Alarm Clock for Android & iOS",
+  title: "Download WakeLeap — Mission Alarm Clock for Android (iOS Planned)",
   description:
-    "Download WakeLeap, the mission-based alarm clock app, on Google Play and the App Store. WakeLeap supports Android 8.0+ and iOS 15+.",
+    "Download WakeLeap, the mission-based alarm clock app, on Google Play. WakeLeap supports Android 8.0+; the WakeLeap iOS version is planned (iOS 15+).",
   path: "/download",
+  keywords: ["download wakeleap", "wakeleap download", "mission alarm clock download", "alarm app download", "alarm clock app download", "app store alarm clock"],
 });
 
 const faqs = [
@@ -31,62 +33,44 @@ const faqs = [
   },
   {
     q: "Which devices support WakeLeap?",
-    a: "WakeLeap supports Android 8.0 (API 26) and above, and iOS 15 and above when the WakeLeap iOS version is released. WakeLeap runs on phones and small tablets from 4.7 to 7 inches.",
+    a: "WakeLeap supports Android 8.0 (API 26) and above; the WakeLeap iOS version is planned (iOS 15+). WakeLeap runs on phones and small tablets from 4.7 to 7 inches.",
   },
   {
     q: "How does WakeLeap compare to Alarmy?",
-    a: "WakeLeap and Alarmy both require a task to dismiss the alarm. WakeLeap offers five focused mission types, configurable snooze with a disable option, and a simple annual price around free.",
+    a: "WakeLeap and Alarmy both require a task to dismiss the alarm. WakeLeap offers five focused mission types, configurable snooze with a disable option.",
   },
 ];
 
 export default function DownloadPage() {
   return (
     <>
-      <JsonLd data={[softwareApplicationSchema(), faqPageSchema(faqs)]} />
+      <JsonLd data={[softwareApplicationSchema()]} />
       <Section
         eyebrow="Download WakeLeap"
         title="Download WakeLeap, the mission-based alarm clock"
         subtitle="Get WakeLeap on your phone and set your first WakeLeap Mission alarm tonight."
       >
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
-          <a
-            href={PLAY_STORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group rounded-2xl border border-border bg-surface p-6 hover:border-accent/60 transition"
-          >
-            <div className="flex items-center gap-3">
-              <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent text-background text-xl font-black">
-                ▶
-              </span>
-              <div>
-                <p className="text-sm text-muted">Get WakeLeap on</p>
-                <p className="text-xl font-bold text-foreground">Google Play</p>
-              </div>
-            </div>
-            <p className="mt-4 text-sm text-muted">
+          <div className="rounded-2xl border border-border bg-surface p-6">
+            <p className="text-sm text-muted">Get WakeLeap on</p>
+            <p className="mt-1 text-xl font-bold text-foreground">Google Play</p>
+            <p className="mt-3 text-sm text-muted">
               WakeLeap is available now for Android {MIN_ANDROID}.
             </p>
-          </a>
-          <a
-            href={APP_STORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group rounded-2xl border border-border bg-surface p-6 hover:border-accent/60 transition"
-          >
-            <div className="flex items-center gap-3">
-              <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent text-background text-xl font-black">
-                
-              </span>
-              <div>
-                <p className="text-sm text-muted">Download WakeLeap on the</p>
-                <p className="text-xl font-bold text-foreground">App Store</p>
-              </div>
+            <div className="mt-5">
+              <PlayStoreBadge size="md" />
             </div>
-            <p className="mt-4 text-sm text-muted">
-              WakeLeap iOS version planned, requires {MIN_IOS} when released.
+          </div>
+          <div className="rounded-2xl border border-border bg-surface p-6">
+            <p className="text-sm text-muted">Download WakeLeap on the</p>
+            <p className="mt-1 text-xl font-bold text-foreground">App Store</p>
+            <p className="mt-3 text-sm text-muted">
+              The WakeLeap iOS version is planned, requires {MIN_IOS} when released.
             </p>
-          </a>
+            <div className="mt-5">
+              <AppStoreBadge size="md" />
+            </div>
+          </div>
         </div>
 
         <div className="mt-10">
@@ -133,15 +117,12 @@ export default function DownloadPage() {
           <div className="rounded-2xl border border-border bg-surface p-6">
             <h3 className="text-lg font-semibold text-foreground">WakeLeap QR code</h3>
             <p className="mt-2 text-sm text-muted">
-              Scan to open the WakeLeap listing on Google Play.
+              Scan to open this download page on your phone, then choose App Store or Google Play.
             </p>
-            <div className="mt-4 inline-block rounded-xl bg-white p-3">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
+            <div className="mt-4 inline-block rounded-xl bg-white p-2">
               <img
-                src={`https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(
-                  PLAY_STORE_URL
-                )}`}
-                alt="QR code linking to WakeLeap on Google Play"
+                src="/qr-download.png"
+                alt="QR code linking to the WakeLeap download page"
                 width={160}
                 height={160}
                 loading="lazy"

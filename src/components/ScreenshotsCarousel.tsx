@@ -34,7 +34,7 @@ export default function ScreenshotsCarousel({
             key={i}
             className="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%]"
           >
-            <div className="rounded-2xl border border-border bg-surface overflow-hidden">
+            <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-[0_16px_48px_-28px_rgba(245,158,11,0.35)] transition hover:border-accent/40">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={s.src}
@@ -51,7 +51,7 @@ export default function ScreenshotsCarousel({
           type="button"
           onClick={() => scroll(-1)}
           aria-label={`Previous ${label ?? "screenshots"}`}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-surface text-foreground hover:border-accent transition"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-surface text-foreground hover:border-accent hover:text-accent transition"
         >
           ←
         </button>
@@ -62,7 +62,7 @@ export default function ScreenshotsCarousel({
           type="button"
           onClick={() => scroll(1)}
           aria-label={`Next ${label ?? "screenshots"}`}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-surface text-foreground hover:border-accent transition"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-surface text-foreground hover:border-accent hover:text-accent transition"
         >
           →
         </button>

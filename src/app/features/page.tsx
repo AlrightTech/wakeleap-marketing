@@ -1,15 +1,15 @@
 import Link from "next/link";
-import { buildMetadata, JsonLd, faqPageSchema } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo";
 import { features } from "@/lib/features";
 import Section from "@/components/Section";
 import FAQ from "@/components/FAQ";
 
 export const metadata = buildMetadata({
-  title: "WakeLeap Features — Mission Alarm Clock App for Android & iOS",
+  title: "WakeLeap Features — Mission Alarm Clock App for Android (iOS Planned)",
   description:
     "Explore WakeLeap features: mission-based alarms, Object Hunt, push-ups, photo missions, make your bed, Bible verse, snooze blocker, alarm sounds, and streaks. The alarm clock app that makes you complete a Mission to silence the alarm.",
   path: "/features",
-  keywords: ["alarm clock app", "alarm app", "clock app", "mission alarm", "snooze blocker", "loud alarm"],
+  keywords: ["alarm clock app", "alarm app", "clock app", "mission alarm", "snooze blocker", "loud alarm", "best alarm clock app", "wake up early", "alarm app for heavy sleepers", "mission alarm app", "no snooze"],
 });
 
 const faqs = [
@@ -35,18 +35,17 @@ const faqs = [
   },
   {
     q: "How does WakeLeap compare to Alarmy?",
-    a: "WakeLeap and Alarmy both require a task to dismiss the alarm. WakeLeap offers five focused mission types, configurable snooze with a disable option, and a simple annual price around free.",
+    a: "WakeLeap and Alarmy both require a task to dismiss the alarm. WakeLeap offers five focused mission types, configurable snooze with a disable option.",
   },
 ];
 
 export default function FeaturesPage() {
   return (
     <>
-      <JsonLd data={faqPageSchema(faqs)} />
       <Section
         eyebrow="WakeLeap alarm clock app features"
         title="WakeLeap alarm clock app features for waking up for real"
-        subtitle="WakeLeap is a mission-based alarm clock app for Android and iOS. Every WakeLeap alarm has one Mission, and the WakeLeap alarm does not stop until the WakeLeap Mission is done."
+        subtitle="WakeLeap is a mission-based alarm clock app for Android, with an iOS version planned. Every WakeLeap alarm has one Mission, and the WakeLeap alarm does not stop until the WakeLeap Mission is done."
       >
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((f) => (

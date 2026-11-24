@@ -1,14 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0b0b12;
+  --background: #09090f;
   --foreground: #f4f4f5;
-  --surface: #14141f;
-  --surface-2: #1c1c2a;
+  --surface: #12121c;
+  --surface-2: #1a1a28;
   --muted: #a1a1aa;
   --accent: #f59e0b;
+  --accent-soft: #fbbf24;
   --accent-2: #fb7185;
-  --border: #27272a;
+  --border: #2a2a36;
+  --glow: rgba(245, 158, 11, 0.18);
 }
 
 @theme inline {
@@ -18,10 +20,43 @@
   --color-surface-2: var(--surface-2);
   --color-muted: var(--muted);
   --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
   --color-accent-2: var(--accent-2);
   --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --animate-motif-float: motif-float 16s ease-in-out infinite;
+  --animate-motif-drift: motif-drift 18s ease-in-out infinite;
+  --animate-motif-spin: motif-spin 48s linear infinite;
+}
+
+@keyframes motif-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(4deg);
+  }
+}
+
+@keyframes motif-drift {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(-3deg);
+  }
+  50% {
+    transform: translate(10px, -12px) rotate(5deg);
+  }
+}
+
+@keyframes motif-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 html {
@@ -69,7 +104,16 @@ body {
   color: #0b0b12;
   font-weight: 600;
 }
+
 .skip-link:focus {
   left: 1rem;
   top: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-motif-float,
+  .animate-motif-drift,
+  .animate-motif-spin {
+    animation: none !important;
+  }
 }
