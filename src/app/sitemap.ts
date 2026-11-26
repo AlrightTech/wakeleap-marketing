@@ -1,59 +1,51 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/lib/site";
 import { features } from "@/lib/features";
 import { comparisons } from "@/lib/compare";
 import { posts } from "@/lib/blog";
 
+/** Hardcoded canonical — live Contabo domain (wakeleap.app has no DNS). */
+const BASE_URL = "https://wakeleap.com";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const staticRoutes = [
-    "/",
-    "/features",
-    "/pricing",
-    "/compare",
-    "/download",
-    "/about",
-    "/editors",
-    "/contact",
-    "/privacy",
-    "/terms",
-    "/blog",
-    "/llms.txt",
+
+  const staticPaths = [
+    { path: "", priority: 1 },
+    { path: "/features", priority: 0.9 },
+    { path: "/pricing", priority: 0.9 },
+    { path: "/compare", priority: 0.8 },
+    { path: "/download", priority: 0.9 },
+    { path: "/about", priority: 0.5 },
+    { path: "/editors", priority: 0.4 },
+    { path: "/contact", priority: 0.5 },
+    { path: "/privacy", priority: 0.3 },
+    { path: "/terms", priority: 0.3 },
+    { path: "/blog", priority: 0.8 },
   ];
 
-  const entries: MetadataRoute.Sitemap = staticRoutes.map((path) => ({
-    url: `${SITE_URL}${path}`,
+  const staticRoutes = staticPaths.map((r) => ({
+    url: `${BASE_URL}${r.path}`,
     lastModified: now,
-    changeFrequency: path === "/" ? "weekly" : "monthly",
-    priority: path === "/" ? 1 : 0.7,
+    priority: r.priority,
   }));
 
-  features.forEach((f) => {
-    entries.push({
-      url: `${SITE_URL}/features/${f.slug}`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    });
-  });
+  const featureRoutes = features.map((f) => ({
+    url: `${BASE_URL}/features/${f.slug}`,
+    lastModified: now,
+    priority: 0.8,
+  }));
 
-  comparisons.forEach((c) => {
-    entries.push({
-      url: `${SITE_URL}/compare/${c.slug}`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    });
-  });
+  const compareRoutes = comparisons.map((c) => ({
+    url: `${BASE_URL}/compare/${c.slug}`,
+    lastModified: now,
+    priority: 0.7,
+  }));
 
-  posts.forEach((p) => {
-    entries.push({
-      url: `${SITE_URL}/blog/${p.slug}`,
-      lastModified: new Date(p.dateModified),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    });
-  });
+  const blogRoutes = posts.map((p) => ({
+    url: `${BASE_URL}/blog/${p.slug}`,
+    lastModified: new Date(p.dateModified),
+    priority: 0.6,
+  }));
 
-  return entries;
+  return [...staticRoutes, ...featureRoutes, ...compareRoutes, ...blogRoutes];
 }

@@ -2,11 +2,11 @@ export const SITE_NAME = "WakeLeap";
 export const SITE_TAGLINE = "Mission-Based Alarm Clock to Wake Up";
 export const SITE_DESCRIPTION =
   "WakeLeap is a mission-based alarm clock app for Android and iOS. To silence the alarm, you must complete a Mission such as an Object Hunt, push-ups, a photo, or reading a Bible verse. Built by Dialed Labs Inc. Listed as Wayk on Google Play.";
-// Prefer NEXT_PUBLIC_SITE_URL in deploy env. Default to the live Vercel host until
-// the custom wakeleap.app domain is attached (canonicals/sitemap must resolve).
+// Prefer NEXT_PUBLIC_SITE_URL in deploy env. Canonical live host is wakeleap.com
+// (wakeleap.app currently has no public DNS; nginx redirects .app → .com when set).
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-  "https://wakeleap.vercel.app";
+  "https://wakeleap.com";
 export const DEVELOPER = "Dialed Labs Inc.";
 /** Google Play listing title */
 export const PLAY_STORE_LISTING_NAME = "Wayk - Mission Alarm Clock App";
