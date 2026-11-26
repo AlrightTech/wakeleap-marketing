@@ -155,7 +155,11 @@ export function articleSchema({
     image: [`${SITE_URL}/og.png`],
     datePublished,
     dateModified,
-    author: { "@type": "Person", name: author },
+    author: {
+      "@type": "Organization",
+      name: author,
+      url: `${SITE_URL}/editors`,
+    },
     publisher: {
       "@type": "Organization",
       name: DEVELOPER,

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { buildMetadata, JsonLd, articleSchema } from "@/lib/seo";
+import { buildMetadata, JsonLd, articleSchema, faqPageSchema } from "@/lib/seo";
 import { posts, getPost } from "@/lib/blog";
 import Section from "@/components/Section";
 import FAQ from "@/components/FAQ";
@@ -50,11 +50,15 @@ export default async function BlogPost({
             dateModified: p.dateModified,
             author: p.author,
           }),
+          ...(p.faqs?.length ? [faqPageSchema(p.faqs)] : []),
         ]}
       />
       <Section eyebrow="Blog" title={p.title}>
         <p className="text-sm text-muted">
-          {p.datePublished} · {p.author}
+          {p.datePublished} ·{" "}
+          <Link href="/editors" className="text-accent underline underline-offset-2">
+            {p.author}
+          </Link>
         </p>
         <article className="mt-6 max-w-3xl text-muted leading-relaxed">
           <ReactMarkdown
