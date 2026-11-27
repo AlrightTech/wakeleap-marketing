@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "blog-cluster-multiple-alarms.ts",
+    "varName": "multipleAlarmsPosts",
+    "slugs": [
+      "multiple-alarms-app",
+      "set-multiple-alarms-phone",
+      "stacked-alarms-morning",
+      "alarm-sequence-wake-up",
+      "two-alarms-strategy"
+    ]
+  },
+  {
+    "fileName": "blog-cluster-alarm-for-night-shift.ts",
+    "varName": "nightShiftAlarmPosts",
+    "slugs": [
+      "alarm-for-night-shift",
+      "night-shift-wake-up-tips",
+      "sleep-schedule-night-shift-alarm",
+      "alarm-after-night-shift",
+      "rotating-shift-alarm-plan"
+    ]
+  },
+  {
+    "fileName": "blog-cluster-focus-timer-alarm.ts",
+    "varName": "focusTimerAlarmPosts",
+    "slugs": [
+      "focus-timer-with-alarm",
+      "pomodoro-alarm-app",
+      "study-timer-alarm",
+      "deep-work-alarm-breaks",
+      "desk-alarm-focus-sessions"
+    ]
+  },
+  {
+    "fileName": "blog-cluster-backup-alarm-strategy.ts",
+    "varName": "backupAlarmStrategyPosts",
+    "slugs": [
+      "backup-alarm-clock-strategy",
+      "failsafe-morning-alarms",
+      "phone-and-clock-dual-alarm",
+      "alarm-redundancy-tips",
+      "never-miss-alarm-setup"
+    ]
+  },
+  {
+    "fileName": "blog-cluster-gentle-wake-alarms.ts",
+    "varName": "gentleWakeAlarmsPosts",
+    "slugs": [
+      "gentle-wake-up-alarm",
+      "sunrise-simulation-alarm-tips",
+      "soft-sound-alarm-morning",
+      "gradual-volume-alarm",
+      "peaceful-morning-alarm"
+    ]
+  },
+  {
+    "fileName": "blog-cluster-heavy-sleeper-vibration.ts",
+    "varName": "heavySleeperVibrationPosts",
+    "slugs": [
+      "heavy-sleeper-vibration-alarm",
+      "bed-shaker-alarm-tips",
+      "watch-vibration-alarm",
+      "strong-vibration-wake-up",
+      "deaf-friendly-alarm-vibration"
+    ]
+  },
+  {
+    "fileName": "blog-cluster-weekend-alarm-habits.ts",
+    "varName": "weekendAlarmHabitsPosts",
+    "slugs": [
+      "weekend-alarm-schedule",
+      "social-jet-lag-alarms",
+      "weekend-wake-time-consistency",
+      "alarm-free-weekend-myth",
+      "monday-alarm-recovery"
+    ]
+  },
+  {
+    "fileName": "blog-cluster-travel-timezone-alarms.ts",
+    "varName": "travelTimezoneAlarmPosts",
+    "slugs": [
+      "travel-timezone-alarm",
+      "jet-lag-alarm-schedule",
+      "hotel-wake-up-alarm-app",
+      "flight-day-alarm-plan",
+      "timezone-change-wake-tips"
+    ]
+  },
+  {
+    "fileName": "blog-cluster-alarm-sound-psychology.ts",
+    "varName": "alarmSoundPsychologyPosts",
+    "slugs": [
+      "best-alarm-sounds-wake",
+      "why-alarm-sounds-fail",
+      "custom-alarm-sound-tips",
+      "nature-sounds-alarm-morning",
+      "voice-alarm-morning-motivation"
+    ]
+  }
+]

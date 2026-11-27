@@ -30,6 +30,15 @@ import { bestPosts } from "./blog-cluster-best";
 import { travelPosts } from "./blog-cluster-travel";
 import { studentPosts } from "./blog-cluster-student";
 import { onlinePosts } from "./blog-cluster-online";
+import { multipleAlarmsPosts } from "./blog-cluster-multiple-alarms";
+import { nightShiftAlarmPosts } from "./blog-cluster-alarm-for-night-shift";
+import { focusTimerAlarmPosts } from "./blog-cluster-focus-timer-alarm";
+import { backupAlarmStrategyPosts } from "./blog-cluster-backup-alarm-strategy";
+import { gentleWakeAlarmsPosts } from "./blog-cluster-gentle-wake-alarms";
+import { heavySleeperVibrationPosts } from "./blog-cluster-heavy-sleeper-vibration";
+import { weekendAlarmHabitsPosts } from "./blog-cluster-weekend-alarm-habits";
+import { travelTimezoneAlarmPosts } from "./blog-cluster-travel-timezone-alarms";
+import { alarmSoundPsychologyPosts } from "./blog-cluster-alarm-sound-psychology";
 
 export const posts: Post[] = [
   ...missionPosts,
@@ -53,6 +62,15 @@ export const posts: Post[] = [
   ...travelPosts,
   ...studentPosts,
   ...onlinePosts,
+  ...multipleAlarmsPosts,
+  ...nightShiftAlarmPosts,
+  ...focusTimerAlarmPosts,
+  ...backupAlarmStrategyPosts,
+  ...gentleWakeAlarmsPosts,
+  ...heavySleeperVibrationPosts,
+  ...weekendAlarmHabitsPosts,
+  ...travelTimezoneAlarmPosts,
+  ...alarmSoundPsychologyPosts,
 ];
 
 export function getPost(slug: string) {
