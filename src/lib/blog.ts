@@ -29,6 +29,7 @@ import { loudPosts } from "./blog-cluster-loud";
 import { bestPosts } from "./blog-cluster-best";
 import { travelPosts } from "./blog-cluster-travel";
 import { studentPosts } from "./blog-cluster-student";
+import { onlinePosts } from "./blog-cluster-online";
 
 export const posts: Post[] = [
   ...missionPosts,
@@ -51,6 +52,7 @@ export const posts: Post[] = [
   ...bestPosts,
   ...travelPosts,
   ...studentPosts,
+  ...onlinePosts,
 ];
 
 export function getPost(slug: string) {
