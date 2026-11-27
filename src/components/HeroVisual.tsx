@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { phoneScreenshots } from "@/lib/screenshots";
 
 /**
@@ -19,12 +20,12 @@ export default function HeroVisual() {
 
       {/* Back phone — tilted left */}
       <div className="absolute left-[2%] top-[8%] w-[52%] -rotate-6 opacity-55 transition duration-500 hover:opacity-80">
-        <PhoneFrame src={back.src} alt="" />
+        <PhoneFrame src={back.src} alt="" width={back.width} height={back.height} />
       </div>
 
       {/* Mid phone — tilted right */}
       <div className="absolute right-[2%] top-[4%] w-[52%] rotate-6 opacity-70 transition duration-500 hover:opacity-90">
-        <PhoneFrame src={mid.src} alt="" />
+        <PhoneFrame src={mid.src} alt="" width={mid.width} height={mid.height} />
       </div>
 
       {/* Front phone — centered, sharp */}
@@ -32,6 +33,8 @@ export default function HeroVisual() {
         <PhoneFrame
           src={front.src}
           alt="WakeLeap mission alarm clock app on a phone — Object Hunt mission screen"
+          width={front.width}
+          height={front.height}
           priority
           ring
         />
@@ -43,11 +46,15 @@ export default function HeroVisual() {
 function PhoneFrame({
   src,
   alt,
+  width,
+  height,
   priority,
   ring,
 }: {
   src: string;
   alt: string;
+  width: number;
+  height: number;
   priority?: boolean;
   ring?: boolean;
 }) {
@@ -63,15 +70,15 @@ function PhoneFrame({
       >
         <span className="h-1.5 w-14 rounded-full bg-white/20" />
       </div>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         src={src}
         alt={alt}
-        width={540}
-        height={1168}
-        loading={priority ? "eager" : "lazy"}
-        decoding="async"
+        width={width}
+        height={height}
+        priority={priority}
         fetchPriority={priority ? "high" : "auto"}
+        loading={priority ? "eager" : "lazy"}
+        sizes="(max-width: 1024px) 55vw, 240px"
         className="aspect-[9/19.5] h-auto w-full object-cover object-top"
       />
     </div>

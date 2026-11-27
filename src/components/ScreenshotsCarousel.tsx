@@ -1,9 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { useRef } from "react";
-import { screenshots } from "@/lib/screenshots";
+import { screenshots, type Screenshot } from "@/lib/screenshots";
 
-type Item = { src: string; alt: string };
+type Item = Pick<Screenshot, "src" | "alt" | "width" | "height" | "device">;
 
 export default function ScreenshotsCarousel({
   items,
@@ -31,16 +32,18 @@ export default function ScreenshotsCarousel({
       >
         {data.map((s, i) => (
           <div
-            key={i}
+            key={s.src}
             className="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%]"
           >
             <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-[0_16px_48px_-28px_rgba(245,158,11,0.35)] transition hover:border-accent/40">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={s.src}
                 alt={s.alt}
-                loading="lazy"
-                className="w-full h-auto block"
+                width={s.width}
+                height={s.height}
+                loading={i < 3 ? "eager" : "lazy"}
+                sizes="(max-width: 640px) 85vw, (max-width: 1024px) 48vw, 32vw"
+                className="block h-auto w-full"
               />
             </div>
           </div>
